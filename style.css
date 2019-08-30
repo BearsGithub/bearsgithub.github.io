@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
+body {background-color:#c83803}
+
+.cd-section{
+	width: 900px;
+	height: 65px;
+  font: normal 16px;
+  font-family: 'Anton', sans-serif;
+
+}
+div.cd-wrapper{
+	width: 900px;
+	margin: 0 auto;
+}
+#countdown-title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing:1px;
+  padding-top: 3px;
+  text-shadow: 1px 1px 2px #000;
+}
+.cd-section p.numbers{
+  font-size: 175px;
+}
+div#countdown{
+  color: #0b162a;
+}
+div#countdown p{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+p.desc{
+  font-size:28px;
+  letter-spacing:1px;
+  color:#fff;
+  margin:50% 0 0 7px;
+}
+p.numbers{
+	width: 100%;
+	margin-top: 9px;
+  margin-left: 7px;
+  color:#fff;
+  background-color:#0b162a;
+  -webkit-text-stroke-color: #c83803;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-fill-color: #fff;
+  letter-spacing:.5px
+}
+div.cd-box{
+	width: 285px;
+	height: 300px;
+	float: left;
+	margin: 0px 15px 0 0;
+}
+#countdown > div:nth-child(1) {
+  width: 285px;
+  margin-left: 301px;
+  height: 230px;
+}
+#countdown > div:nth-child(1) > p.desc {
+  margin-top: 0;
+}
+#countdown > div:nth-child(1) > p.numbers.days {
+  font-size:200px;
+}
