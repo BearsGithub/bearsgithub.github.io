@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	//
   (function(e){
 		e.fn.countdown = function (t, n){
 			function i(){
@@ -25,7 +24,11 @@ $(document).ready(function(){
 				seconds == 1 ? thisEl.find(".timeRefSeconds").text("Seconds") : thisEl.find(".timeRefSeconds").text("Seconds");
 				//
 				if(r["format"] == "on"){
-					days = String(days).length >= 2 ? days : "0" + days;
+					if (String(days) == 0){
+						days = "";
+					} else if (String(days) <= 9){
+						days = "0" + days;
+					}
 					hours = String(hours).length >= 2 ? hours : "0" + hours;
 					minutes = String(minutes).length >= 2 ? minutes : "0" + minutes;
 					seconds = String(seconds).length >= 2 ? seconds : "0" + seconds
@@ -69,8 +72,10 @@ $(document).ready(function(){
 		}
 		//
 		$("#countdown").countdown({
-			date: "05 September 2019 19:20:00",
+			date: "5 September 2019 19:20:00",
 			format: "on"
 		});
+
+
 	});
 });
