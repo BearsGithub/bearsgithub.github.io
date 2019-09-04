@@ -25,12 +25,7 @@ $(document).ready(function(){
 				seconds == 1 ? thisEl.find(".timeRefSeconds").text("Seconds") : thisEl.find(".timeRefSeconds").text("Seconds");
 				//
 				if(r["format"] == "on"){
-					if (String(days) == 0){
-						days = "";
-						$("#dvdays").hide();
-					} else if (String(days) <= 9){
-						days = "0" + days;
-					}
+					days = String(days).length >= 2 ? days : "0" + days;
 					hours = String(hours).length >= 2 ? hours : "0" + hours;
 					minutes = String(minutes).length >= 2 ? minutes : "0" + minutes;
 					seconds = String(seconds).length >= 2 ? seconds : "0" + seconds
@@ -74,7 +69,7 @@ $(document).ready(function(){
 		}
 		//
 		$("#countdown").countdown({
-			date: "04 September 2019 19:20:00",
+			date: "05 September 2019 19:20:00",
 			format: "on"
 		});
 	});
