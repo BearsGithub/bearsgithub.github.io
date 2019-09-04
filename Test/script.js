@@ -72,7 +72,7 @@ $(document).ready(function(){
 		}
 		//
 		$("#countdown").countdown({
-			date: "5 September 2019 19:20:00",
+			date: "4 September 2019 19:20:00",
 			format: "on"
 		});
 
