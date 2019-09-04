@@ -27,7 +27,7 @@ $(document).ready(function(){
 				if(r["format"] == "on"){
 					if (String(days) == 0){
 						days = "";
-						$("#txtdays").hide();
+						$("#dvdays").hide();
 					} else if (String(days) <= 9){
 						days = "0" + days;
 					}
@@ -74,7 +74,7 @@ $(document).ready(function(){
 		}
 		//
 		$("#countdown").countdown({
-			date: "05 September 2019 19:20:00",
+			date: "04 September 2019 19:20:00",
 			format: "on"
 		});
 	});
