@@ -27,7 +27,7 @@ $(document).ready(function(){
 				if(r["format"] == "on"){
 					if (String(days) == 0){
 						days = "";
-						$("#dvdays").hide();
+						$("#txtdays").hide();
 					} else if (String(days) <= 9){
 						days = "0" + days;
 					}
