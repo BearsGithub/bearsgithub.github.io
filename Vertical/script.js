@@ -74,7 +74,7 @@ $(document).ready(function(){
 		}
 		//
 		$("#countdown").countdown({
-			date: "04 September 2019 19:20:00",
+			date: "05 September 2019 19:20:00",
 			format: "on"
 		});
 	});
