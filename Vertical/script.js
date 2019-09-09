@@ -72,7 +72,7 @@ $(document).ready(function(){
 			futureFormattedDate = mm + "/" + dd + "/" + y;
 			return futureFormattedDate
 		}
-		//
+		//USE 24HR MILITARY TIME
 		$("#countdown").countdown({
 			date: "23 September 2019 19:15:00",
 			format: "on"
