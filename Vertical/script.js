@@ -74,7 +74,7 @@ $(document).ready(function(){
 		}
 		//USE 24HR MILITARY TIME
 		$("#countdown").countdown({
-			date: "23 September 2019 19:15:00",
+			date: "06 October 2019 12:00:00",
 			format: "on"
 		});
 	});
