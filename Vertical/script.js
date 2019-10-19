@@ -72,9 +72,10 @@ $(document).ready(function(){
 			futureFormattedDate = mm + "/" + dd + "/" + y;
 			return futureFormattedDate
 		}
-		//USE 24HR MILITARY TIME
+		//USE 24HR MILITARY TIME\
+		//LAC
 		$("#countdown").countdown({
-			date: "06 October 2019 12:00:00",
+			date: "27 October 2019 12:00:00",
 			format: "on"
 		});
 	});
