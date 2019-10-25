@@ -68,8 +68,9 @@ $(document).ready(function(){
 			return futureFormattedDate
 		}
 		//USE 24HR MILITARY TIME
+		//PHI
 		$("#countdown").countdown({
-			date: "20 October 2019 15:25:00",
+			date: "11 November 2019 12:00:00",
 			format: "on"
 		});
 	});
