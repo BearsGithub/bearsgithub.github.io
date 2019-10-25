@@ -70,7 +70,7 @@ $(document).ready(function(){
 		//USE 24HR MILITARY TIME
 		//PHI
 		$("#countdown").countdown({
-			date: "11 November 2019 12:00:00",
+			date: "03 November 2019 12:00:00",
 			format: "on"
 		});
 	});
