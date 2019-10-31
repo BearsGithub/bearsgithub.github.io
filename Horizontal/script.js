@@ -70,7 +70,7 @@ $(document).ready(function(){
 		//USE 24HR MILITARY TIME
 		//LAC
 		$("#countdown").countdown({
-			date: "27 October 2019 12:00:00",
+			date: "10 November 2019 12:00:00",
 			format: "on"
 		});
 	});
