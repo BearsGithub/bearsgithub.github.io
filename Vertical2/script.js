@@ -73,9 +73,9 @@ $(document).ready(function(){
 			return futureFormattedDate
 		}
 		//USE 24HR MILITARY TIME
-		//LAR
+		//DET
 		$("#countdown").countdown({
-			date: "17 November 2019 19:20:00",
+			date: "28 November 2019 11:30:00",
 			format: "on"
 		});
 	});
