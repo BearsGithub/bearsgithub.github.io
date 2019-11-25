@@ -68,9 +68,9 @@ $(document).ready(function(){
 			return futureFormattedDate
 		}
 		//USE 24HR MILITARY TIME
-		//NYG
+		//DAL
 		$("#countdown").countdown({
-			date: "24 November 2019 12:00:00",
+			date: "5 December 2019 19:20:00",
 			format: "on"
 		});
 	});
