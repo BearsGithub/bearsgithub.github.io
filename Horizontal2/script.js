@@ -68,9 +68,9 @@ $(document).ready(function(){
 			return futureFormattedDate
 		}
 		//USE 24HR MILITARY TIME
-		//DET
+		//GB
 		$("#countdown").countdown({
-			date: "28 November 2019 11:30:00",
+			date: "15 December 2019 12:00:00",
 			format: "on"
 		});
 	});
