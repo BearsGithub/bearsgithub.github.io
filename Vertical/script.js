@@ -73,9 +73,9 @@ $(document).ready(function(){
 			return futureFormattedDate
 		}
 		//USE 24HR MILITARY TIME\
-		//DAL
+		//KC
 		$("#countdown").countdown({
-			date: "5 December 2019 19:20:00",
+			date: "22 December 2019 19:20:00",
 			format: "on"
 		});
 	});
