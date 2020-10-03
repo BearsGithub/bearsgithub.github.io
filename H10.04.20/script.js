@@ -70,7 +70,7 @@ $(document).ready(function(){
 		//USE 24HR MILITARY TIME
 		//IND
 		$("#countdown").countdown({
-			date: "04 October 2020 12:00:00",
+			date: "04 October 2020 15:25:00",
 			format: "on"
 		});
 	});
