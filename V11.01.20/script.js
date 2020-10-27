@@ -75,7 +75,7 @@ $(document).ready(function(){
 		//USE 24HR MILITARY TIME
 		//NO
 		$("#countdown").countdown({
-			date: "11 November 2020 15:25:00",
+			date: "1 November 2020 15:25:00",
 			format: "on"
 		});
 	});
