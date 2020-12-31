@@ -75,7 +75,7 @@ $(document).ready(function(){
 		//USE 24HR MILITARY TIME
 		//GB
 		$("#countdown").countdown({
-			date: "01 January 2021 15:25:00",
+			date: "03 January 2021 15:25:00",
 			format: "on"
 		});
 	});
