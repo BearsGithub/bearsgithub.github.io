@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+body{
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+}
 
 .cd-section{
 	width: 900px;
@@ -10,6 +14,7 @@
 div.cd-wrapper{
 	width: 900px;
 	margin: 0 auto;
+  margin-top:75%
 }
 #countdown-title {
   text-transform: uppercase;
