@@ -2,7 +2,7 @@
 body{
   background-image: url('background.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  width: 80%;
 }
 .cd-section{
 	width: 1200px;
