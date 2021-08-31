@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
-
+body{
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .cd-section{
 	width: 1200px;
 	height: 65px;
