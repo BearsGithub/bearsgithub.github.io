@@ -2,16 +2,16 @@
 body{
   background-image: url('background.jpg');
   background-repeat: no-repeat;
+  width: 3840px;
+  height: 2160px;
 }
 .cd-section{
-	width: 1200px;
 	height: 65px;
   font: normal 16px;
   font-family: 'Anton', sans-serif;
-  margin-left: -20%;
+  width: 1920px;
 }
 div.cd-wrapper{
-	width: 1200px;
 	margin: 0 auto;
 }
 #countdown-title {
