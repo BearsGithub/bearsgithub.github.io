@@ -2,14 +2,13 @@
 body{
   background-image: url('background.jpg');
   background-repeat: no-repeat;
-  width: 80%;
 }
 .cd-section{
 	width: 1200px;
 	height: 65px;
   font: normal 16px;
   font-family: 'Anton', sans-serif;
-
+  margin-left: -20%;
 }
 div.cd-wrapper{
 	width: 1200px;
