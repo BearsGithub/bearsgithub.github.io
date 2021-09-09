@@ -48,9 +48,6 @@ p.numbers{
   -webkit-text-stroke-width: 4px;
   -webkit-text-fill-color: #fff;
   letter-spacing:.5px;
-  /**background-image: linear-gradient(180deg, #0a182f, #082345);
-  background-image: linear-gradient(180deg, rgba(10,24,47,0.7), rgba(8,35,69,0.7));**/
-
 }
 div.cd-box{
 	width: 285px;
