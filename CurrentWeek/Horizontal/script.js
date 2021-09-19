@@ -68,9 +68,9 @@ $(document).ready(function(){
 			return futureFormattedDate
 		}
 		//USE 24HR MILITARY TIME
-		//CIN
+		//CLE
 		$("#countdown").countdown({
-			date: "19 September 2021 12:00:00",
+			date: "26 September 2021 12:00:00",
 			format: "on"
 		});
 	});
