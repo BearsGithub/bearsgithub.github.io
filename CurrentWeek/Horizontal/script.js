@@ -68,9 +68,9 @@ $(document).ready(function(){
 			return futureFormattedDate
 		}
 		//USE 24HR MILITARY TIME
-		//DET
+		//LVR
 		$("#countdown").countdown({
-			date: "3 October 2021 12:00:00",
+			date: "10 October 2021 15:05:00",
 			format: "on"
 		});
 	});
