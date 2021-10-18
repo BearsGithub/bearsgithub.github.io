@@ -68,9 +68,9 @@ $(document).ready(function(){
 			return futureFormattedDate
 		}
 		//USE 24HR MILITARY TIME
-		//GB
+		//TB
 		$("#countdown").countdown({
-			date: "17 October 2021 12:00:00",
+			date: "24 October 2021 15:25:00",
 			format: "on"
 		});
 	});
