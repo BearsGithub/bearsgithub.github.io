@@ -68,9 +68,9 @@ $(document).ready(function(){
 			return futureFormattedDate
 		}
 		//USE 24HR MILITARY TIME
-		//SF
+		//PIT
 		$("#countdown").countdown({
-			date: "31 October 2021 12:00:00",
+			date: "8 November 2021 12:00:00",
 			format: "on"
 		});
 	});
