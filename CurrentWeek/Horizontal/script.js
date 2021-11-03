@@ -70,7 +70,7 @@ $(document).ready(function(){
 		//USE 24HR MILITARY TIME
 		//PIT
 		$("#countdown").countdown({
-			date: "8 November 2021 12:00:00",
+			date: "8 November 2021 19:15:00",
 			format: "on"
 		});
 	});
