@@ -68,9 +68,9 @@ $(document).ready(function(){
 			return futureFormattedDate
 		}
 		//USE 24HR MILITARY TIME
-		//GB
+		//MIN
 		$("#countdown").countdown({
-			date: "12 December 2021 19:20:00",
+			date: "20 December 2021 19:15:00",
 			format: "on"
 		});
 	});
