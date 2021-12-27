@@ -68,15 +68,9 @@ $(document).ready(function(){
 			return futureFormattedDate
 		}
 		//USE 24HR MILITARY TIME
-<<<<<<< HEAD
 		//NYG
 		$("#countdown").countdown({
 			date: "2 January 2022 12:00:00",
-=======
-		//SEA
-		$("#countdown").countdown({
-			date: "26 December 2021 15:05:00",
->>>>>>> bc0f8612675f966f7f9f57f65c9f0dffd6532c40
 			format: "on"
 		});
 	});
