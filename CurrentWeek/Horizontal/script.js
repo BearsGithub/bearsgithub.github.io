@@ -68,9 +68,9 @@ $(document).ready(function(){
 			return futureFormattedDate
 		}
 		//USE 24HR MILITARY TIME
-		//MIN
+		//NYG
 		$("#countdown").countdown({
-			date: "20 December 2021 19:15:00",
+			date: "2 January 2022 12:00:00",
 			format: "on"
 		});
 	});
