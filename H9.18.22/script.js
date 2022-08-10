@@ -68,9 +68,9 @@ $(document).ready(function(){
 			return futureFormattedDate
 		}
 		//USE 24HR MILITARY TIME
-		//KC
+		//GB
 		$("#countdown").countdown({
-			date: "13 August 2022 12:00:00",
+			date: "18 September 2022 19:20:00",
 			format: "on"
 		});
 	});
