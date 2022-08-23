@@ -2,20 +2,17 @@
 body{
   background-image: url('background.png');
   background-repeat: no-repeat;
-  width:1280px;
+  width: 3840px;
   height: 2160px;
 }
-
 .cd-section{
-	width: 900px;
 	height: 65px;
   font: normal 16px;
   font-family: 'Anton', sans-serif;
+  width: 1750px;
 }
 div.cd-wrapper{
-	width: 900px;
 	margin: 0 auto;
-  margin-top:75%
 }
 #countdown-title {
   text-transform: uppercase;
@@ -26,7 +23,7 @@ div.cd-wrapper{
   text-shadow: 1px 1px 2px #000;
 }
 .cd-section p.numbers{
-  font-size: 175px;
+  font-size: 200px;
 }
 div#countdown{
   color: #0b162a;
@@ -50,22 +47,11 @@ p.numbers{
   -webkit-text-stroke-color: #c83803;
   -webkit-text-stroke-width: 4px;
   -webkit-text-fill-color: #fff;
-  letter-spacing:.5px
+  letter-spacing:.5px;
 }
 div.cd-box{
 	width: 285px;
 	height: 300px;
 	float: left;
 	margin: 0px 15px 0 0;
-}
-#countdown > div:nth-child(1) {
-  width: 285px;
-  margin-left: 301px;
-  height: 230px;
-}
-#countdown > div:nth-child(1) > p.desc {
-  margin-top: 0;
-}
-#countdown > div:nth-child(1) > p.numbers.days {
-  font-size:200px;
 }
