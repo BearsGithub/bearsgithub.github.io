@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@font-face {
+  font-family: "GoodHeadProBold";
+  src: url("GoodHeadPro-CompBold.otf");
+}
+@font-face {
+  font-family: "GoodHeadProNews";
+  src: url("GoodHeadPro-CompNews.otf");
+}
+body{
+  background-image: url('background.png');
+  background-repeat: no-repeat;
+  width: 3840px;
+  height: 2160px;
+}
+.cd-section{
+	height: 65px;
+	font: normal 16px;
+	font-family: 'GoodHeadProNews', sans-serif;
+	width: 1645px;
+}
+div.cd-wrapper{
+	margin: 0 auto;
+}
+#countdown-title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing:1px;
+  padding-top: 3px;
+  text-shadow: 1px 1px 2px #000;
+}
+.cd-section p.numbers{
+  font-size: 210px;
+}
+div#countdown p{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+p.desc{
+  font-size: 100px;
+  color:#fff;
+  margin: 60% 0 0 7px;
+}
+p.numbers{
+	margin-top: -10px;
+	margin-left: 7px;
+	color:#fff;
+	letter-spacing:.5px;
+	font-family: 'GoodHeadProBold', sans-serif;
+}
+div.cd-box{
+	width: 285px;
+	height: 300px;
+	float: left;
+	margin: 0px -30px 0 0;
+}
