@@ -68,9 +68,9 @@ $(document).ready(function(){
 			return futureFormattedDate
 		}
 		//USE 24HR MILITARY TIME
-		//SF
+		//HST
 		$("#countdown").countdown({
-			date: "11 September 2022 12:00:00",
+			date: "25 September 2022 12:00:00",
 			format: "on"
 		});
 	});
