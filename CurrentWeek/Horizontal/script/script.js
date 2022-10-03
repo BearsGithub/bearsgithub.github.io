@@ -68,9 +68,9 @@ $(document).ready(function(){
 			return futureFormattedDate
 		}
 		//USE 24HR MILITARY TIME
-		//NYG
+		//MIN
 		$("#countdown").countdown({
-			date: "02 October 2022 12:00:00",
+			date: "09 October 2022 12:00:00",
 			format: "on"
 		});
 	});
