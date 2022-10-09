@@ -68,9 +68,9 @@ $(document).ready(function(){
 			return futureFormattedDate
 		}
 		//USE 24HR MILITARY TIME
-		//MIN
+		//WSH
 		$("#countdown").countdown({
-			date: "09 October 2022 12:00:00",
+			date: "13 October 2022 19:15:00",
 			format: "on"
 		});
 	});
