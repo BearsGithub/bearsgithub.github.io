@@ -68,9 +68,9 @@ $(document).ready(function(){
 			return futureFormattedDate
 		}
 		//USE 24HR MILITARY TIME
-		//NYJ
+		//GB
 		$("#countdown").countdown({
-			date: "27 November 2022 12:00:00",
+			date: "4 December 2022 12:00:00",
 			format: "on"
 		});
 	});
