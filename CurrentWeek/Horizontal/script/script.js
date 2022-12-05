@@ -68,9 +68,9 @@ $(document).ready(function(){
 			return futureFormattedDate
 		}
 		//USE 24HR MILITARY TIME
-		//GB
+		//PHI
 		$("#countdown").countdown({
-			date: "4 December 2022 12:00:00",
+			date: "18 December 2022 12:00:00",
 			format: "on"
 		});
 	});
