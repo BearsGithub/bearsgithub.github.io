@@ -68,9 +68,9 @@ $(document).ready(function(){
 			return futureFormattedDate
 		}
 		//USE 24HR MILITARY TIME
-		//DET
+		//MIN
 		$("#countdown").countdown({
-			date: "1 January 2023 12:00:00",
+			date: "8 January 2023 12:00:00",
 			format: "on"
 		});
 	});
