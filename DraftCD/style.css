@@ -1,0 +1,67 @@
+.cd-section{
+	width: 100%;
+	height: auto;
+}
+.cd-wrapper{
+	width: 100%;
+	margin: 0 auto;
+}
+.cd-section .numbers{
+  font-size: 33px;
+}
+#countdown{
+  color: #0b162a;
+  display: inline-flex;
+}
+#countdown p{
+	text-align: center;
+}
+.colon {
+  float: left;
+  font-size: 30px;
+  font-weight:bold;
+  margin: 32px 10px 0 10px;
+  color:#e3e3ff;
+}
+.desc{
+  font-size:14px;
+  letter-spacing:1px;
+  color:#e3e3ff;
+  margin: -18px 0 0 0;
+  font-family: ff-good-headline-web-pro-ext, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.numbers{
+	width: 100%;
+  margin: 0;
+  color:#0b162a;
+  letter-spacing:.5px;
+  font-family: ff-good-headline-web-pro-ext, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  margin-top: 4px;
+}
+.cd-box{
+  width: 50px;
+  height: 43px;
+	float: left;
+	margin: 0;
+  margin-top: 30px;
+}
+.box-1 {
+  background-image: url("https://assets.codepen.io/216979/cd-1.jpg");
+  background-size: cover;
+}
+.box-2 {
+  background-image: url("https://assets.codepen.io/216979/cd-2.jpg");
+  background-size: cover;
+}
+.box-3 {
+  background-image: url("https://assets.codepen.io/216979/cd-3.jpg");
+  background-size: cover;
+}
+.box-4 {
+  background-image: url("https://assets.codepen.io/216979/cd-4.jpg");
+  background-size: cover;
+}
