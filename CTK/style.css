@@ -1,0 +1,147 @@
+@-webkit-keyframes initial-loading {
+  0%, 100% {
+    transform: translate(-34px, 0);
+  }
+  50% {
+    transform: translate(96px, 0);
+  }
+}
+@keyframes initial-loading {
+  0%, 100% {
+    transform: translate(-34px, 0);
+  }
+  50% {
+    transform: translate(96px, 0);
+  }
+}
+.main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 5px;
+}
+
+.initial-load-animation {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.initial-load-animation .text {
+  background: #F23846;
+  background: linear-gradient(to right, #F23846 0%, #EC6011 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 4px;
+  letter-spacing: 0.5px;
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all 0.5s ease-out;
+  font-size: 24px;
+  font-family: "ff-good-headline-web-pro-com", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.initial-load-animation .text span {
+  font-family: "ff-good-headline-web-pro-com", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.initial-load-animation .loading-bar {
+  width: 120px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transform: rotateY(0);
+  transition: transform 0.3s ease-in;
+  display: flex;
+  align-items: center;
+}
+.initial-load-animation .loading-bar .blue-bar {
+  height: 100%;
+  width: 68px;
+  position: absolute;
+  transform: translate(-34px, 0);
+  background: linear-gradient(to right, #F79C69 0%, #E64301 50%, #FE26AF 100%);
+  border-radius: 0px;
+  z-index: 2;
+  -webkit-animation: initial-loading 2s infinite ease;
+          animation: initial-loading 2s infinite ease;
+  filter: blur(1px);
+}
+.initial-load-animation .loading-bar .bg-bar {
+  width: 130px;
+  height: 1px;
+  margin: 0 auto;
+  border-radius: 2px;
+  background: linear-gradient(to right, #F23846 0%, #EC6011 100%);
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  transform: rotateY(0);
+  transition: transform 0.3s ease-in;
+}
+
+.cd-section {
+  height: auto;
+}
+
+.cd-section .numbers {
+  font-size: 28px;
+}
+
+#countdown {
+  display: inline-flex;
+  background-image: url("https://static.clubs.nfl.com/image/upload/v1722377200/bears/evsdnihu9lmxcf5lwno2.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  padding: 0px 0px 0px 10px;
+  background: linear-gradient(to right, #F23846 0%, #EC6011 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#countdown p {
+  text-align: center;
+}
+
+.colon {
+  width: 1px;
+  background: #ec7731;
+  margin: 5px 0;
+}
+
+.desc {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 0px;
+  font-family: "ff-good-headline-web-pro-com", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.numbers {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  letter-spacing: 1.5px;
+  font-family: "ff-good-headline-web-pro-com", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  height: 30px;
+}
+
+.cd-box {
+  width: 50px;
+  height: auto;
+  float: left;
+  margin: 0;
+}
