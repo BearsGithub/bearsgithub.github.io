@@ -34,7 +34,7 @@ body {
 }
 
 #event-name {
- font-size: 2em;
+ font-size: 5em;
  margin: 0 20px;
  flex: 1;
  text-align: center;
@@ -42,9 +42,9 @@ body {
 
 #team1-logo, #team2-logo {
  width: auto;
- height: 70px;
- max-height: 70px;
- max-width: 70px;
+ height: 140px;
+ max-height: 140px;
+ max-width: 140px;
  flex-shrink: 0;
 }
 
