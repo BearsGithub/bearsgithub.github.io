@@ -28,11 +28,15 @@ body {
 #event-name {
     font-size: 2em;
     margin: 0 10px;
+    flex: 1;
 }
 
 #team1-logo, #team2-logo {
-    width: 50px;
+    width: auto;
     height: 50px;
+    max-height: 50px;
+    max-width: 50px;
+    flex-shrink: 0;
 }
 
 #countdown {
