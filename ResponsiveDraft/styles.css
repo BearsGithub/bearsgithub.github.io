@@ -1,0 +1,98 @@
+body {
+    justify-content: center;
+ align-items: center;
+ height: 100vh;
+ margin: 0;
+ font-family: Arial, sans-serif;
+ background-color: transparent;
+}
+
+.countdown-container {
+ text-align: center;
+ background: transparent;
+ padding: 20px;
+ border-radius: 10px;
+ box-shadow: none;
+ width: 90%;
+ max-width: 600px;
+}
+
+#event-name-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 20px;
+}
+
+#event-name {
+ font-size: 2em;
+ margin: 0 20px;
+ flex: 1;
+ text-align: center;
+}
+
+#team1-logo, #team2-logo {
+ width: auto;
+ height: 70px;
+ max-height: 70px;
+ max-width: 70px;
+ flex-shrink: 0;
+}
+
+#countdown {
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ font-size: 2em;
+}
+
+#countdown div {
+ margin: 10px;
+ flex: 1 1 100px;
+}
+
+#countdown span {
+ display: block;
+ font-size: 3em;
+ color: #333;
+}
+
+@media (max-width: 600px) {
+ #countdown {
+     font-size: 1.5em;
+ }
+
+ #countdown span {
+     font-size: 2em;
+ }
+}
+
+@media (orientation: portrait) {
+ #countdown {
+     flex-direction: column;
+     align-items: center;
+ }
+
+ #countdown div {
+     margin: 5px 0;
+ }
+}
+
+@media (orientation: landscape) {
+ #countdown {
+     flex-direction: row;
+     justify-content: space-around;
+ }
+
+ #countdown div {
+     margin: 10px;
+ }
+}
+
+#event-logo {
+    width: auto;
+    height: 70px;
+    max-height: 70px;
+    max-width: 70px;
+    margin-right: 20px;
+}
