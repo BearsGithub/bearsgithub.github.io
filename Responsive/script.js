@@ -1,7 +1,7 @@
 const events = [
-    { name: "Game 1", date: "Sep 10, 2025 12:00:00" },
-    { name: "Game 2", date: "Sep 17, 2025 12:00:00" },
-    { name: "Game 3", date: "Sep 24, 2025 12:00:00" },
+    { name: "Team 1 vs Team 2", date: "Sep 10, 2025 13:00:00" },
+    { name: "Team 1 at Team 3", date: "Sep 17, 2025 13:00:00" },
+    { name: "Team 4 vs Team 5", date: "Sep 24, 2025 13:00:00" },
     // Add more events here
 ];
 
@@ -9,6 +9,7 @@ let currentEventIndex = 0;
 
 function countdown() {
     const countDownDate = new Date(events[currentEventIndex].date).getTime();
+    document.getElementById("event-name").innerText = events[currentEventIndex].name;
 
     const x = setInterval(function() {
         const now = new Date().getTime();
@@ -31,6 +32,7 @@ function countdown() {
                 countdown();
             } else {
                 document.getElementById("countdown").innerHTML = "All events have passed!";
+                document.getElementById("event-name").innerText = "";
             }
         }
     }, 1000);

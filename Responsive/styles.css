@@ -14,6 +14,8 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
 }
 
 #event-name {
@@ -24,15 +26,27 @@ body {
 #countdown {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     font-size: 2em;
 }
 
 #countdown div {
-    margin: 0 10px;
+    margin: 10px;
+    flex: 1 1 100px;
 }
 
 #countdown span {
     display: block;
     font-size: 3em;
     color: #333;
+}
+
+@media (max-width: 600px) {
+    #countdown {
+        font-size: 1.5em;
+    }
+
+    #countdown span {
+        font-size: 2em;
+    }
 }
