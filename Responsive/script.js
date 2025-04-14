@@ -1,5 +1,14 @@
-function countdown(date) {
-    const countDownDate = new Date(date).getTime();
+const events = [
+    { name: "Game 1", date: "Sep 10, 2025 12:00:00" },
+    { name: "Game 2", date: "Sep 17, 2025 12:00:00" },
+    { name: "Game 3", date: "Sep 24, 2025 12:00:00" },
+    // Add more events here
+];
+
+let currentEventIndex = 0;
+
+function countdown() {
+    const countDownDate = new Date(events[currentEventIndex].date).getTime();
 
     const x = setInterval(function() {
         const now = new Date().getTime();
@@ -17,9 +26,14 @@ function countdown(date) {
 
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("countdown").innerHTML = "EXPIRED";
+            currentEventIndex++;
+            if (currentEventIndex < events.length) {
+                countdown();
+            } else {
+                document.getElementById("countdown").innerHTML = "All events have passed!";
+            }
         }
     }, 1000);
 }
 
-countdown("Dec 31, 2025 23:59:59");
+countdown();
