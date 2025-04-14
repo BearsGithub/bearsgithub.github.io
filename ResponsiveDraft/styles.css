@@ -38,6 +38,7 @@ body {
  margin: 0 20px;
  flex: 1;
  text-align: center;
+ color: white;
 }
 
 #team1-logo, #team2-logo {
@@ -58,12 +59,13 @@ body {
 #countdown div {
  margin: 10px;
  flex: 1 1 100px;
+ color:white;
 }
 
 #countdown span {
  display: block;
  font-size: 2em;
- color: #333;
+ color: white;
  font-family: 'GoodHeadProBold', sans-serif;
 }
 
@@ -74,6 +76,7 @@ body {
 
  #countdown span {
      font-size: 2em;
+     
  }
 }
 
