@@ -5,15 +5,15 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: transparent;
 }
 
 .countdown-container {
     text-align: center;
-    background: #fff;
+    background: transparent;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
     width: 90%;
     max-width: 600px;
 }
@@ -48,5 +48,27 @@ body {
 
     #countdown span {
         font-size: 2em;
+    }
+}
+
+@media (orientation: portrait) {
+    #countdown {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #countdown div {
+        margin: 5px 0;
+    }
+}
+
+@media (orientation: landscape) {
+    #countdown {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #countdown div {
+        margin: 10px;
     }
 }
