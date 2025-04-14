@@ -1,9 +1,18 @@
+@font-face {
+    font-family: "GoodHeadProBold";
+    src: url("../assets/GoodHeadPro-CompBold.otf");
+  }
+  @font-face {
+    font-family: "GoodHeadProNews";
+    src: url("../assets/GoodHeadPro-CompNews.otf");
+  }
+
 body {
     justify-content: center;
  align-items: center;
  height: 100vh;
  margin: 0;
- font-family: Arial, sans-serif;
+ font-family: 'GoodHeadProNews', sans-serif;
  background-color: transparent;
 }
 
@@ -43,7 +52,7 @@ body {
  display: flex;
  justify-content: space-around;
  flex-wrap: wrap;
- font-size: 2em;
+ font-size: 3em;
 }
 
 #countdown div {
@@ -55,6 +64,7 @@ body {
  display: block;
  font-size: 3em;
  color: #333;
+ font-family: 'GoodHeadProBold', sans-serif;
 }
 
 @media (max-width: 600px) {
