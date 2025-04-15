@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Halas Hall Weather</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://use.typekit.net/vzg8ene.css">
+<script src="https://kit.fontawesome.com/bec34a5849.js" crossorigin="anonymous"></script>
+<body>
+
+<div id="weather-container">
+  <div id="current-weather">
+    <div class="weather-block">
+      <div class="weather-main">
+        <div class="icon-title-current">
+          <img id="current-icon" src="https://www.weatherbit.io/static/img/icons/c02d.png" alt="Few Clouds" />
+          <div class="current-title">
+            <p style="line-height:31px;">Halas Hall</p>
+            <p style="line-height:13px;"><span id="weather-description">Scattered clouds</span></p>
+          </div>
+        </div>
+        <div class="temp-high-low">
+          <div id="current-temp">72º</div>
+          <div class="high-low">H:&nbsp;<div id="current-high">35º</div>&nbsp;L:&nbsp;<div id="current-low">35º</div></div>
+        </div>
+      </div>
+      <div class="weather-details">
+        <div id="detail-stack">
+          <i class="fa-duotone fa-solid fa-wind"></i>
+          <p class="detail-title">Wind Speed</p>
+          <p id="wind-speed">22.8 MPH</p>
+        </div>
+        <div id="detail-stack">
+          <i class="fa-duotone fa-solid fa-compass"></i>
+          <p class="detail-title">Wind Direction</p>
+          <p id="wind-direction">NW</p>
+        </div>
+        <div class="vertical-divider"></div>
+        <div id="detail-stack">
+          <i class="fa-duotone fa-solid fa-raindrops"></i>
+          <p class="detail-title">Precipitation</p>
+          <p id="current-precip">0.15 IN</p>
+        </div>
+        <div id="detail-stack">
+          <i class="fa-duotone fa-solid fa-cloud-showers-heavy"></i>
+          <p class="detail-title">Chance of Rain</p>
+          <p id="precip-chance">20%</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--Forecast-->
+  <div id="forecast">
+    <div class="weather-block">
+      <div class="forecast-title">3-Day Forecast</div>
+      <div class="forecast-grid">
+
+        <div class="forecast-day">
+          <div class="forecast-date">Apr 16</div>
+          <img class="forecast-icon" src="https://www.weatherbit.io/static/img/icons/c03d.png" alt="Scattered Clouds" />
+          <div class="forecast-temp">68°</div>
+          <div class="forecast-description">Scattered clouds</div>
+          <div class="forecast-precip">Chance of Rain: 10%</div>
+          <div class="forecast-wind-speed-stack">Wind:&nbsp;<span class="forecast-wind-speed">6.1 mph</span></div>
+          <div class="forecast-wind-direction-stack">Direction:&nbsp;<span class="forecast-wind-direction">SW</span></div>
+        </div>
+
+        <div class="forecast-day">
+          <div class="forecast-date">Apr 17</div>
+          <img class="forecast-icon" src="https://www.weatherbit.io/static/img/icons/r04d.png" alt="Light Rain" />
+          <div class="forecast-temp">63°</div>
+          <div class="forecast-description">Light rain</div>
+          <div class="forecast-precip">Chance of Rain: 65%</div>
+          <div class="forecast-wind-speed-stack">Wind:&nbsp;<span class="forecast-wind-speed">10.4 mph</span></div>
+          <div class="forecast-wind-direction-stack">Direction:&nbsp;<span class="forecast-wind-direction">W</span></div>
+        </div>
+
+        <div class="forecast-day">
+          <div class="forecast-date">Apr 18</div>
+          <img class="forecast-icon" src="https://www.weatherbit.io/static/img/icons/c02d.png" alt="Few Clouds" />
+          <div class="forecast-temp">70°</div>
+          <div class="forecast-description">Few clouds</div>
+          <div class="forecast-precip">Chance of Rain: 5%</div>
+          <div class="forecast-wind-speed-stack">Wind:&nbsp;<span class="forecast-wind-speed">4.9 mph</span></div>
+          <div class="forecast-wind-direction-stack">Direction:&nbsp;<span class="forecast-wind-direction">NNE</span></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

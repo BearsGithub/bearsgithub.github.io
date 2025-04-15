@@ -1,0 +1,225 @@
+body {
+  background:transparent; 
+}
+div {
+  display:inherit;
+}
+p {
+  margin: 0;
+  color:#0b162a;
+}
+.current-title {
+  display:block;
+}
+.current-title {
+  font-family: ff-good-headline-web-pro-nar, sans-serif;
+font-weight: 700;
+font-style: normal;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+#current-icon {
+  width: 115px;
+  height: 115px;
+  margin: -20px 0;
+}
+.current-title span {
+  font-family: ff-good-headline-web-pro, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  color:#535353;
+}
+#weather-container {
+  font-family: ff-good-headline-web-pro, sans-serif;
+  font-style: normal;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: #ececec;
+  border-radius: 15px;
+}
+.weather-icon {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+}
+.weather-block {
+  max-width:550px;
+  margin: 0 auto;
+}
+.weather-main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #717171;
+}
+.icon-title-current {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.temp-high-low {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 61px;
+}
+.weather-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 25px 10px;
+  border-bottom: 1px solid #717171;
+}
+.weather-block img {
+  width: 80px;
+  height: 80px;
+}
+.weather-details p, .weather-main p {
+  margin: 0;
+  color: #0b162a;
+}
+#current-temp {
+  font-family: ff-good-headline-web-pro-nar, sans-serif;
+font-weight: 700;
+font-style: normal;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+.high-low {
+  font-weight: 500;
+  font-size: 1.1em;
+}
+#wind-speed, #wind-direction, #current-precip, #precip-chance {
+font-family: ff-good-headline-web-pro-nar, sans-serif;
+font-weight: 700;
+font-style: normal;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: -.5px;
+}
+#detail-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vertical-divider {
+  height:130px;
+  width:1px;
+  background:#717171;
+}
+.detail-title {
+  font-family: ff-good-headline-web-pro, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  letter-spacing:-.5px;
+  text-transform: uppercase;
+  padding:4px 0;
+}
+/*.fa-duotone {
+  background-color: #f9f9f9;
+  color:#0b162a;
+  border-radius:100%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  padding: 18px;
+  font-size:28px;
+  margin-bottom: 10px;
+}*/
+.fa-duotone {
+  background-color: #f3f3f3;
+  color:#0b162a;
+  border-radius: 100%;
+  padding: 18px;
+  font-size:28px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+}
+.forecast-title {
+  font-family: ff-good-headline-web-pro-nar, sans-serif;
+font-weight: 700;
+font-style: normal;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: .25px;
+  text-align:center;
+  padding:35px 0 10px 0;
+}
+.forecast-grid {
+  display: flex;
+  padding: 10px 0px 15px 0;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.forecast-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 0.75rem;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  width: 27%;
+}
+.forecast-day img {
+  width: 70px;
+  height: 70px;
+  margin: 0;
+}
+.forecast-day {
+  padding: 10px;
+  border-right: 1px solid #ccc;
+  text-align: center;
+  font-family: ff-good-headline-web-pro, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.forecast-date {
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing:-.5px;
+}
+.forecast-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 5px;
+}
+.forecast-temp {
+  font-size: 1.5em;
+  color: #0b162a;
+  font-weight: 600;
+  padding:0 0 2px 0;
+}
+.forecast-description {
+  font-size: 0.95em;
+  color: #0b162a;
+  font-weight: 500;
+  padding:2px 0;
+}
+.forecast-precip {
+  font-size: 0.9em;
+  color: #535353;
+  font-weight: 500;
+  padding:0 0 5px 0;
+}
+.forecast-wind-speed-stack, .forecast-wind-direction-stack {
+   padding:1px 0 2px 0;
+}
+.forecast-wind-speed, .forecast-wind-direction {
+  font-weight: bold;
+  color: #0b162a;
+}
