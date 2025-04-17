@@ -60,20 +60,20 @@ body {
 
 .countdown-value {
  display: block;
- font-size: 7vw;
+ font-size: 32px;
  color: rgb(255, 255, 255);
  font-family: 'GoodHeadProCondUltraIt', sans-serif;
 }
 
 .countdown-text {
-    font-size: 3vw;
+    font-size: 12px;
     color: #e64100;
     font-family: 'GoodHeadProCondMediumIt', sans-serif;
 }
 #event-logo {
     width: auto;
-    height: 130px;
-    max-height: 130px;
-    max-width: 130px;
+    height: 80px;
+    max-height: 110px;
+    max-width: 110px;
     margin-right: 20px;
 }
