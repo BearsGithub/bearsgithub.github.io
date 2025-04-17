@@ -8,13 +8,27 @@ body {
     color: white;
     background-color: #0b162a;
 }
-.size1080 {
+.size1080 p{
     font-size: 16px;
 }
 
 .size4K {
     font-size: 30px;
 }
+
+.windicon {
+    font-size: 40px;
+}
+
 #no-precipitation {
     display: none;
 }
+.container {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+}
+    
+.windDirection {
+    margin-right: 10px; /* Add some space between the divs */
+}
+    

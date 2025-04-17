@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,18 @@
     <link rel="stylesheet" href="weather-icons.min.css">
     <link rel="stylesheet" href="weather-icons-wind.min.css">
 </head>
+
 <body>
-    <div class="size4K" id="weather-wind">
-        <p>Current: <span id="current-wind"></span> mph <span id="current-wind-direction"></span> <i id="weather-icon-wind" class="wi wi-wind"></i></p>
-        <p>Max: <span id="max-wind"></span> mph</p>
-    </div>    
+    <div class="container">
+        <div class="windDirection">
+            <i id="weather-icon-wind" class="wi wi-wind windicon"></i>
+        </div>
+        <div class="size4K" id="weather-wind">
+            <p>Wind: <span id="current-wind"></span> mph <span id="current-wind-direction"></span></p>
+            <p>Max: <span id="max-wind"></span> mph</p>
+        </div>
+    </div>
     <script src="script-wind.js"></script>
 </body>
+
 </html>

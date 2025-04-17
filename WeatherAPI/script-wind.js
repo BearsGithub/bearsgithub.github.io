@@ -31,7 +31,7 @@ const windDirectionMap = {
       document.getElementById('current-wind').textContent = data.current.wind_mph;
       document.getElementById('current-wind-direction').textContent = windDirection;
       document.getElementById('max-wind').textContent = data.current.gust_mph;
-      document.getElementById('weather-icon-wind').className = `wi wi-wind ${windDirectionClass}`;
+      document.getElementById('weather-icon-wind').className = `wi wi-wind windicon ${windDirectionClass}`;
     } catch (error) {
       console.error('Error fetching weather data:', error);
     }
