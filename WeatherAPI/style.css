@@ -5,8 +5,9 @@
 }
 body {
     font-family: 'TerminaHeavy', sans-serif;
+    color: white;
 }
 
 p {
-    font-size: 18px;
+    font-size: 4em;
 }
