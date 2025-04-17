@@ -97,7 +97,7 @@ fetch(`https://api.weatherbit.io/v2.0/current?postal_code=60045&country=US&units
     document.getElementById('current-icon').src = iconUrl;
     document.getElementById('current-icon').alt = current.weather.description;
     document.getElementById('current-temp').innerText = `${current.temp}°F`;
-  document.getElementById('weather-description').innerText = `${current.weather.description}`;
+    document.getElementById('weather-description').innerText = `${current.weather.description}`;
     document.getElementById('wind-speed').innerText = `${Math.round(windMph)} mph`;
     document.getElementById('wind-direction').innerText = `${current.wind_cdir}`;
     document.getElementById('current-precip').innerText = `${precipInches} in`;
