@@ -22,7 +22,6 @@ body {
 .countdown-container {
     text-align: center;
     background: transparent;
-    /* padding: 20px; */
     border-radius: 10px;
     box-shadow: none;
     width: 90%;
@@ -32,7 +31,6 @@ body {
 #event-name-container {
  display: flex;
  align-items: center;
- /* margin-bottom: 20px; */
  justify-content: center;
 }
 
@@ -54,19 +52,18 @@ body {
 
 #countdown div {
  margin: 10px;
- /* flex: 1 1 98px; */
  color: rgb(255, 255, 255);
 }
 
 .countdown-value {
  display: block;
- font-size: 40px;
+ font-size: 48px;
  color: rgb(255, 255, 255);
  font-family: 'GoodHeadProCondUltraIt', sans-serif;
 }
 
 .countdown-text {
-    font-size: 20px;
+    font-size: 24px;
     color: #e64100;
     font-family: 'GoodHeadProCondMediumIt', sans-serif;
 }
