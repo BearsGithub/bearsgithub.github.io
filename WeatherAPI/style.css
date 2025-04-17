@@ -8,6 +8,10 @@ body {
     color: white;
     background-color: #0b162a;
 }
-p {
-    font-size: 3vw;
+.size1080 {
+    font-size: 2em;
+}
+
+.size4K {
+    font-size: 4em;
 }

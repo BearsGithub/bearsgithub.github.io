@@ -5,7 +5,6 @@ const event = {
 
 function countdown() {
     const countDownDate = new Date(event.date).getTime();
-    document.getElementById("event-name").innerText = event.name;
 
     const x = setInterval(function() {
         const now = new Date().getTime();
