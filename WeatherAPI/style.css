@@ -6,8 +6,8 @@
 body {
     font-family: 'TerminaHeavy', sans-serif;
     color: white;
+    background-color: transparent;
 }
-
 p {
     font-size: 4em;
 }
