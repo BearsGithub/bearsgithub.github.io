@@ -60,13 +60,13 @@ body {
 
 .countdown-value {
  display: block;
- font-size: 32px;
+ font-size: 40px;
  color: rgb(255, 255, 255);
  font-family: 'GoodHeadProCondUltraIt', sans-serif;
 }
 
 .countdown-text {
-    font-size: 12px;
+    font-size: 20px;
     color: #e64100;
     font-family: 'GoodHeadProCondMediumIt', sans-serif;
 }
