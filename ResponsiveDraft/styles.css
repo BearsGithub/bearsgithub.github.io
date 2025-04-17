@@ -1,44 +1,48 @@
 @font-face {
-    font-family: "GoodHeadProBold";
-    src: url("../assets/GoodHeadPro-CompBold.otf");
+    font-family: "GoodHeadProCondUltraIt";
+    src: url("../font/GoodHeadPro-CondUltraIt.otf");
   }
-  @font-face {
-    font-family: "GoodHeadProNews";
-    src: url("../assets/GoodHeadPro-CompNews.otf");
-  }
+@font-face {
+    font-family: "GoodHeadProCondMediumIt";
+    src: url("../font/GoodHeadPro-CondMediumIt.otf");
+}
+@font-face {
+    font-family: "TerminaHeavy";
+    src: url("../font/Termina-Black.otf");
+}
 
 body {
     justify-content: center;
- align-items: center;
- height: 100vh;
- margin: 0;
- font-family: 'GoodHeadProNews', sans-serif;
- background-color: transparent;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: transparent;
 }
 
 .countdown-container {
- text-align: center;
- background: transparent;
- padding: 20px;
- border-radius: 10px;
- box-shadow: none;
- width: 90%;
- max-width: 600px;
+    text-align: center;
+    background: transparent;
+    /* padding: 20px; */
+    border-radius: 10px;
+    box-shadow: none;
+    width: 90%;
+    max-width: 600px;
 }
 
 #event-name-container {
  display: flex;
  justify-content: center;
  align-items: center;
- margin-bottom: 20px;
+ /* margin-bottom: 20px; */
 }
 
 #event-name {
- font-size: 6em;
+ font-size: 4em;
  margin: 0 20px;
  flex: 1;
- text-align: center;
- color: white;
+ text-align: right;
+ color: rgb(29, 48, 113);
+ font-family: 'TerminaHeavy', sans-serif;
 }
 
 #team1-logo, #team2-logo {
@@ -53,20 +57,20 @@ body {
  display: flex;
  justify-content: space-around;
  flex-wrap: wrap;
- font-size: 4em;
+ font-size: 2em;
 }
 
 #countdown div {
  margin: 10px;
- flex: 1 1 100px;
- color:white;
+ flex: 1 1 98px;
+ color: rgb(15, 61, 145);
 }
 
-#countdown span {
+.countdown-value {
  display: block;
  font-size: 2em;
- color: white;
- font-family: 'GoodHeadProBold', sans-serif;
+ color: rgb(15, 61, 145);
+ font-family: 'GoodHeadProCondUltraIt', sans-serif;
 }
 
 @media (max-width: 600px) {
@@ -86,9 +90,6 @@ body {
      align-items: center;
  }
 
- #countdown div {
-     margin: 5px 0;
- }
 }
 
 @media (orientation: landscape) {
@@ -97,15 +98,16 @@ body {
      justify-content: space-around;
  }
 
- #countdown div {
-     margin: 10px;
- }
 }
-
+.countdown-text {
+    font-size: 1em;
+    color: rgb(15, 61, 145);
+    font-family: 'GoodHeadProCondMediumIt', sans-serif;
+}
 #event-logo {
     width: auto;
-    height: 160px;
-    max-height: 160px;
-    max-width: 160px;
+    height: 130px;
+    max-height: 130px;
+    max-width: 130px;
     margin-right: 20px;
 }

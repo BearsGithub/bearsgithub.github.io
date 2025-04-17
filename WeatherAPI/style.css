@@ -1,5 +1,10 @@
+
+@font-face {
+    font-family: "TerminaHeavy";
+    src: url("../font/Termina-Black.otf");
+}
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'TerminaHeavy', sans-serif;
     margin: 20px;
 }
 
