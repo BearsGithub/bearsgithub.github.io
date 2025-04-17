@@ -52,15 +52,17 @@ const weatherIconMap = {
   async function fetchWeather() {
     const apiKey = 'dd592801e36540649bb213133251604';
     const location = '42.2571,-87.8941';
-    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}`;
+    const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=1&aqi=no&alerts=no`;
     try {
       const response = await fetch(url);
       const data = await response.json();
       const conditionCode = data.current.condition.code;
       const iconClass = weatherIconMap[conditionCode];
       const precipitation = data.current.precip_in;
-      const precipitationChance = data.current.precip_chance;
-  
+      var precipitationChance = data.forecast.hour.chance_of_rain;
+      if (precipitationChance == 0) {
+        precipitationChance = data.forecast.hour.chance_of_snow;
+      }
       if (precipitation > 0 || precipitationChance > 0) {
         document.getElementById('precipitation').textContent = precipitation;
         document.getElementById('precipitation-chance').textContent = precipitationChance;
