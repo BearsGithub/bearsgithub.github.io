@@ -65,8 +65,10 @@ const weatherIconMap = {
         document.getElementById('precipitation').textContent = precipitation;
         document.getElementById('precipitation-chance').textContent = precipitationChance;
         document.getElementById('weather-icon').className = `wi ${iconClass}`;
+        document.getElementById('precipitation').style.display = 'none';
       } else {
-        //document.getElementById('weather-precipitation').style.display = 'none';
+        document.getElementById('weather-precipitation').style.display = 'none';
+        document.getElementById('precipitation').style.display = 'inline';
       }
     } catch (error) {
       console.error('Error fetching weather data:', error);
