@@ -57,7 +57,6 @@ body {
  display: flex;
  justify-content: space-around;
  flex-wrap: wrap;
- font-size: 2em;
 }
 
 #countdown div {
@@ -68,7 +67,7 @@ body {
 
 .countdown-value {
  display: block;
- font-size: 2em;
+ font-size: 3em;
  color: rgb(255, 255, 255);
  font-family: 'GoodHeadProCondUltraIt', sans-serif;
 }
@@ -101,7 +100,7 @@ body {
 }
 .countdown-text {
     font-size: 1em;
-    color: rgb(255, 255, 255);
+    color: #e64100;
     font-family: 'GoodHeadProCondMediumIt', sans-serif;
 }
 #event-logo {
