@@ -1,9 +1,4 @@
 const weatherIconMap = {
-    1000: 'wi-day-sunny',
-    1003: 'wi-day-cloudy',
-    1006: 'wi-cloudy',
-    1009: 'wi-cloudy',
-    1030: 'wi-fog',
     1063: 'wi-day-showers',
     1066: 'wi-day-snow',
     1069: 'wi-day-sleet',

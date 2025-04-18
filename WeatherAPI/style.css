@@ -10,6 +10,7 @@ body {
 }
 .size1080 p{
     font-size: 18px;
+    padding-right: 30px;
 }
 
 .size4K {
@@ -20,9 +21,6 @@ body {
     font-size: 40px;
 }
 
-#no-precipitation {
-    display: none;
-}
 .container {
     display: flex;
     align-items: center; /* Align items vertically in the center */
