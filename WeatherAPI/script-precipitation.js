@@ -59,18 +59,16 @@ const weatherIconMap = {
       const conditionCode = data.current.condition.code;
       const iconClass = weatherIconMap[conditionCode];
       const precipitation = data.current.precip_in;
-      var precipitationChance = data.forecast.hour.chance_of_rain;
+      var precipitationChance = data.forecast.forecastday[0].day.daily_chance_of_rain;
       if (precipitationChance == 0) {
-        precipitationChance = data.forecast.hour.chance_of_snow;
+        precipitationChance = data.forecast.forecastday[0].day.daily_chance_of_snow;
       }
       if (precipitation > 0 || precipitationChance > 0) {
         document.getElementById('precipitation').textContent = precipitation;
         document.getElementById('precipitation-chance').textContent = precipitationChance;
         document.getElementById('weather-icon').className = `wi ${iconClass}`;
-        document.getElementById('precipitation').style.display = 'none';
       } else {
         document.getElementById('weather-precipitation').style.display = 'none';
-        document.getElementById('precipitation').style.display = 'inline';
       }
     } catch (error) {
       console.error('Error fetching weather data:', error);
