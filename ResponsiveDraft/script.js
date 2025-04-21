@@ -1,6 +1,6 @@
 const event = {
     name: "NFL Draft",
-    date: "Apr 24, 2025 20:00:00" // Set the date and time for the NFL Draft
+    date: "Apr 24, 2025 19:00:00" // Set the date and time for the NFL Draft
 };
 
 function countdown() {
