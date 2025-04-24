@@ -20,9 +20,9 @@ function countdown() {
         document.getElementById("minutes").innerText = minutes;
         document.getElementById("seconds").innerText = seconds;
 
-        if (distance < 0) {
+        if (distance <= 0) {
             clearInterval(x);
-            document.getElementById("countdown").innerHTML = "The draft has started!";
+            document.getElementById("countdown-container").style.display = 'none';
         }
     }, 1000);
 }
