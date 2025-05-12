@@ -30,17 +30,20 @@ body {
 
 #event-name-container {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    padding-right: 30px;
 }
 
-#team1-logo,
+#team1-logo{
+    max-height: 100px;
+    max-width: 145px;
+    margin-left: 14px;
+}
 #team2-logo {
-    /* width: auto; */
-    /* height: 80px; */
     max-height: 70px;
     max-width: 110px;
-    /* margin-right: 20px; */
+    margin-left: 14px;
 }
 
 #countdown {

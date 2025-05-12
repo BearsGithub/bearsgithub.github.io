@@ -1,18 +1,18 @@
 const events = [
   {
-    name: "Bears vs Lions",
+    name: "@",
     date: "Sep 10, 2025 13:00:00",
     team1Logo: "../assets/logos/BEARS.png",
     team2Logo: "../assets/logos/LIONS.png",
   },
   {
-    name: "Bears at Packers",
+    name: "vs",
     date: "Sep 17, 2025 13:00:00",
     team1Logo: "../assets/logos/BEARS.png",
     team2Logo: "../assets/logos/PACKERS.png",
   },
   {
-    name: "Bears vs Vikings",
+    name: "vs",
     date: "Sep 24, 2025 13:00:00",
     team1Logo: "../assets/logos/BEARS.png",
     team2Logo: "../assets/logos/VIKINGS.png",
