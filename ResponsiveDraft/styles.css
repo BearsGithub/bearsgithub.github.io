@@ -1,7 +1,8 @@
+
 @font-face {
     font-family: "GoodHeadProCondUltraIt";
     src: url("../font/GoodHeadPro-CondUltraIt.otf");
-  }
+}
 @font-face {
     font-family: "GoodHeadProCondMediumIt";
     src: url("../font/GoodHeadPro-CondMediumIt.otf");
@@ -12,11 +13,13 @@
 }
 
 body {
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     background-color: #0b162a;
+    flex-direction: column;
 }
 
 .countdown-container {
@@ -29,37 +32,36 @@ body {
 }
 
 #event-name-container {
- display: flex;
- align-items: center;
- justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
 #team1-logo, #team2-logo {
- width: auto;
- height: 70px;
- max-height: 70px;
- max-width: 70px;
- flex-shrink: 0;
+    width: auto;
+    height: 70px;
+    max-height: 70px;
+    max-width: 70px;
+    flex-shrink: 0;
 }
 
 #countdown {
- display: flex;
- flex-wrap: wrap;
- gap: 5px;
- justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
 }
 
 #countdown div {
- margin: 10px;
- color: rgb(255, 255, 255);
+    margin: 10px;
+    color: rgb(255, 255, 255);
 }
 
 .countdown-value {
- display: block;
- font-size: 48px;
- color: rgb(255, 255, 255);
- font-family: 'GoodHeadProCondUltraIt', sans-serif;
+    display: block;
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    font-family: 'GoodHeadProCondUltraIt', sans-serif;
 }
 
 .countdown-text {
@@ -67,10 +69,24 @@ body {
     color: #e64100;
     font-family: 'GoodHeadProCondMediumIt', sans-serif;
 }
+
 #event-logo {
     width: auto;
     height: 80px;
     max-height: 110px;
     max-width: 110px;
     margin-right: 20px;
+}
+
+.logo-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 250px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
 }

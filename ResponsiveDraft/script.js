@@ -23,6 +23,7 @@ function countdown() {
         if (distance <= 0) {
             clearInterval(x);
             document.getElementById("countdown-container").style.display = 'none';
+            document.getElementById("logo-container").style.display = 'flex';
         }
     }, 1000);
 }
