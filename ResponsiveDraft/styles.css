@@ -14,7 +14,7 @@
 
 body {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
     margin: 0;
@@ -80,13 +80,13 @@ body {
 
 .logo-container {
     display: none;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
 }
 
 .logo-container img {
-    max-width: 365px;
-    max-height: 365px;
+    max-width: 350px;
+    max-height: 350px;
     width: auto;
     height: auto;
 }
