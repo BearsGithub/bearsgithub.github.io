@@ -18,7 +18,7 @@ const windDirectionMap = {
 };
 
 async function fetchWeather() {
-  const url = 'https://widget.api.perryweather.com/v1/Widget/Conditions/b17b868d-6b3e-40d4-a3f0-feda8356c910';
+  const url = 'https://dev-perryweatherapi-ebcvgnagbvg7dubh.northcentralus-01.azurewebsites.net/weather';
   
   try {
     console.log('Fetching weather data from:', url);
@@ -29,14 +29,13 @@ async function fetchWeather() {
     }
     
     const data = await response.json();
-    console.log('Weather data received:', data);
 
-    const windDirection = data.data.windGuestDirection;
+    const windDirection = data.data.windDirection;
     const windDirectionClass = windDirectionMap[windDirection];
 
-    document.getElementById('current-wind').textContent = data.data.windGust.value;
+    document.getElementById('current-wind').textContent = data.data.windSpeed.value.toFixed(2);
     document.getElementById('current-wind-direction').textContent = windDirection;
-    document.getElementById('max-wind').textContent = data.data.windGust.value;
+    document.getElementById('max-wind').textContent = data.data.windGust.value.toFixed(2);
     document.getElementById('weather-icon-wind').className = `wi wi-wind windicon ${windDirectionClass}`;
   } catch (error) {
     console.error('Error fetching weather data:', error);
