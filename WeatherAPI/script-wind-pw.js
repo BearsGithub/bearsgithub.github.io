@@ -1,20 +1,20 @@
 const windDirectionMap = {
-    N: 'wi-towards-n',
-    NNE: 'wi-towards-nne',
-    NE: 'wi-towards-ne',
-    ENE: 'wi-towards-ene',
-    E: 'wi-towards-e',
-    ESE: 'wi-towards-ese',
-    SE: 'wi-towards-se',
-    SSE: 'wi-towards-sse',
-    S: 'wi-towards-s',
-    SSW: 'wi-towards-ssw',
-    SW: 'wi-towards-sw',
-    WSW: 'wi-towards-wsw',
-    W: 'wi-towards-w',
-    WNW: 'wi-towards-wnw',
-    NW: 'wi-towards-nw',
-    NNW: 'wi-towards-nnw'
+    N: 'wi-towards-s',
+    NNE: 'wi-towards-ssw',
+    NE: 'wi-towards-sw',
+    ENE: 'wi-towards-wsw',
+    E: 'wi-towards-w',
+    ESE: 'wi-towards-wnw',
+    SE: 'wi-towards-nw',
+    SSE: 'wi-towards-nnw',
+    S: 'wi-towards-n',
+    SSW: 'wi-towards-nne',
+    SW: 'wi-towards-ne',
+    WSW: 'wi-towards-ene',
+    W: 'wi-towards-e',
+    WNW: 'wi-towards-ese',
+    NW: 'wi-towards-se',
+    NNW: 'wi-towards-sse'
 };
 
 async function fetchWeather() {
