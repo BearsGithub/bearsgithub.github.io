@@ -17,8 +17,9 @@
           throw new Error(`HTTP error! status: ${hourlyresponse.status}`);
         }
         const hourlydata = await hourlyresponse.json();
-        const conditionCode = hourlydata.data[0].weatherCode.value;
-        const precipitation = hourlydata.data[0].precipitation.value;
+        //Getting the precipitation change for the next hour's forecast
+        const conditionCode = hourlydata.data[1].weatherCode.value;
+        const precipitation = hourlydata.data[1].precipitation.value;
         
         if (precipitation > 0 || precipitationChance > 0) {
           document.getElementById('precipitation').textContent = precipitation;
