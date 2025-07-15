@@ -10,8 +10,6 @@
         throw new Error(`HTTP error! status: ${dailyresponse.status}`);
       }
         const dailydata = await dailyresponse.json();
-        //const conditionCode = dailydata.data.weatherCode.value;
-        //const precipitation = dailydata.data.precipitation.value;
         const precipitationChance = dailydata.data.precipitationChance;
 
         const hourlyresponse = await fetch(hourlyurl);
