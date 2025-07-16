@@ -10,7 +10,9 @@
         throw new Error(`HTTP error! status: ${dailyresponse.status}`);
       }
         const dailydata = await dailyresponse.json();
-        const precipitationChance = dailydata.data.precipitationChance;
+        //Getting todays 
+        const precipitationChance = dailydata.data[0].precipitationChance.value ?? 0;
+        const conditionCode = dailydata.data[0].weatherCode.value;
 
         const hourlyresponse = await fetch(hourlyurl);
         if (!hourlyresponse.ok) {
@@ -18,13 +20,12 @@
         }
         const hourlydata = await hourlyresponse.json();
         //Getting the precipitation change for the next hour's forecast
-        const conditionCode = hourlydata.data[1].weatherCode.value;
         const precipitation = hourlydata.data[1].precipitation.value;
         
         if (precipitation > 0 || precipitationChance > 0) {
           document.getElementById('precipitation').textContent = precipitation;
           document.getElementById('precipitation-chance').textContent = precipitationChance;
-          document.getElementById('weather-icon').style.backgroundImage = `url(https://widget.perryweather.com/icons/weather/dark/${conditionCode}.svg)`;
+          document.getElementById('weather-icon').src = `https://widget.perryweather.com/icons/weather/dark/${conditionCode}.svg`;
         } else {
           document.getElementById('weather-precipitation').style.display = 'none';
         }
