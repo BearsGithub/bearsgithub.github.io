@@ -10,8 +10,8 @@
         throw new Error(`HTTP error! status: ${dailyresponse.status}`);
       }
         const dailydata = await dailyresponse.json();
-        //Getting todays 
-        const precipitationChance = dailydata.data[0].precipitationChance.value ?? 0;
+        //Getting todays total precipitation
+        const precipitation = dailydata.data[0].precipitation.value.toFixed(2) ?? 0;
         const conditionCode = dailydata.data[0].weatherCode.value;
 
         const hourlyresponse = await fetch(hourlyurl);
@@ -19,9 +19,9 @@
           throw new Error(`HTTP error! status: ${hourlyresponse.status}`);
         }
         const hourlydata = await hourlyresponse.json();
-        //Getting the precipitation change for the next hour's forecast
-        const precipitation = hourlydata.data[1].precipitation.value;
-        
+        //Getting the precipitation chance for the next hour's forecast
+        const precipitationChance = hourlydata.data[1].precipitationChance.value ?? 0;
+
         if (precipitation > 0 || precipitationChance > 0) {
           document.getElementById('precipitation').textContent = precipitation;
           document.getElementById('precipitation-chance').textContent = precipitationChance;
