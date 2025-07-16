@@ -33,9 +33,9 @@ async function fetchWeather() {
     const windDirection = data.data.windDirection;
     const windDirectionClass = windDirectionMap[windDirection];
 
-    document.getElementById('current-wind').textContent = data.data.windSpeed.value.toFixed(2);
+    document.getElementById('current-wind').textContent = Number(data.data.windSpeed.value.toFixed(2));
     document.getElementById('current-wind-direction').textContent = windDirection;
-    document.getElementById('max-wind').textContent = data.data.windGust.value.toFixed(2);
+    document.getElementById('max-wind').textContent = Number(data.data.windGust.value.toFixed(2));
     document.getElementById('weather-icon-wind').className = `wi wi-wind windicon ${windDirectionClass}`;
   } catch (error) {
     console.error('Error fetching weather data:', error);

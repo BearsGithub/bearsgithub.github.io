@@ -11,7 +11,7 @@
       }
         const dailydata = await dailyresponse.json();
         //Getting todays total precipitation
-        const precipitation = dailydata.data[0].precipitation.value.toFixed(2) ?? 0;
+        const precipitation = Number(dailydata.data[0].precipitation.value.toFixed(2)) ?? 0;
         const conditionCode = dailydata.data[0].weatherCode.value;
 
         const hourlyresponse = await fetch(hourlyurl);
