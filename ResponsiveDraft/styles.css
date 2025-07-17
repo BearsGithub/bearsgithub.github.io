@@ -23,6 +23,7 @@ body {
 }
 
 .countdown-container {
+    display: none;
     text-align: center;
     background: transparent;
     border-radius: 10px;

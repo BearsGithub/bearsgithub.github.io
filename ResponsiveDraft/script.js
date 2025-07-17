@@ -24,6 +24,9 @@ function countdown() {
             clearInterval(x);
             document.getElementById("countdown-container").style.display = 'none';
             document.getElementById("logo-container").style.display = 'flex';
+        } else {
+            document.getElementById("countdown-container").style.display = 'flex';
+            document.getElementById("logo-container").style.display = 'none';
         }
     }, 1000);
 }
