@@ -17,6 +17,26 @@ const windDirectionMap = {
     NNW: 'wi-towards-sse'
 };
 
+const windDirectionLookup = {
+    N: 'S',
+    NNE: 'SSW',
+    NE: 'SW',
+    ENE: 'WSW',
+    E: 'W',
+    ESE: 'WNW',
+    SE: 'NW',
+    SSE: 'NNW',
+    S: 'N',
+    SSW: 'NNE',
+    SW: 'NE',
+    WSW: 'ENE',
+    W: 'E',
+    WNW: 'ESE',
+    NW: 'SE',
+    NNW: 'SSE'
+};
+
+
 async function fetchWeather() {
   const url = 'https://dev-perryweatherapi-ebcvgnagbvg7dubh.northcentralus-01.azurewebsites.net/weather';
   
@@ -31,10 +51,11 @@ async function fetchWeather() {
     const data = await response.json();
 
     const windDirection = data.data.windDirection;
+    const windBlowingDirection = windDirectionLookup[windDirection];
     const windDirectionClass = windDirectionMap[windDirection];
 
     document.getElementById('current-wind').textContent = Number(data.data.windSpeed.value.toFixed(2));
-    document.getElementById('current-wind-direction').textContent = windDirection;
+    document.getElementById('current-wind-direction').textContent = windBlowingDirection;
     document.getElementById('max-wind').textContent = Number(data.data.windGust.value.toFixed(2));
     document.getElementById('weather-icon-wind').className = `wi wi-wind windicon ${windDirectionClass}`;
   } catch (error) {
