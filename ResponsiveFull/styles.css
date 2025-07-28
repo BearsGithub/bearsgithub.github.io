@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "GoodHeadProCondUltraIt";
+    src: url("../font/GoodHeadPro-CondUltraIt.otf");
+}
+@font-face {
+    font-family: "GoodHeadProCondMediumIt";
+    src: url("../font/GoodHeadPro-CondMediumIt.otf");
+}
+@font-face {
+    font-family: "TerminaHeavy";
+    src: url("../font/Termina-Black.otf");
+}
+
+@media (max-width: 600px) {
+  #event-name-container {
+    flex-direction: column;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  text-align: center;
+  }
+
+  #team1-logo{
+    max-width: 20vw;
+  }
+  #team2-logo {
+    max-width: 13vw;
+  }
+
+  .countdown-value {
+    font-size: 32px;
+  }
+
+  .countdown-text {
+    font-size: 18px;
+  }
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #0b162a;
+}
+
+.countdown-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+
+#event-name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#team1-logo{
+  max-width: 20vw;
+  height: auto;
+}
+
+#team2-logo {
+  max-width: 13vw;
+  height: auto;
+  padding-left: 30px;
+  padding-right: 50px;
+}
+
+#countdown {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+#countdown div {
+    margin: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.countdown-value {
+    display: block;
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    font-family: "GoodHeadProCondUltraIt", sans-serif;
+}
+
+.countdown-text {
+    font-size: 24px;
+    color: #e64100;
+    font-family: "GoodHeadProCondMediumIt", sans-serif;
+}
+
+#event-name {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    color: rgb(255, 255, 255);
+    font-family: "TerminaHeavy", sans-serif;
+    margin-right: 10px;
+    margin-left: 10px;
+}
