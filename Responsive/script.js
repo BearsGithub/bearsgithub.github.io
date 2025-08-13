@@ -7,7 +7,7 @@ const events = [
   },
   {
     "name": "vs",
-    "date": "Aug 17, 2025 19:00:00",
+    "date": "Aug 17, 2025 19:10:00",
     "team1Logo": "../assets/logos/BEARS.png",
     "team2Logo": "../assets/logos/BILLS.png"
   },
