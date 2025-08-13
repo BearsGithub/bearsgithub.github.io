@@ -24,7 +24,7 @@
     max-width: 20vw;
   }
   #team2-logo {
-    max-width: 13vw;
+    max-width: 10vw;
   }
 
   .countdown-value {
@@ -74,7 +74,7 @@ body {
 }
 
 #team2-logo {
-  max-width: 13vw;
+  max-width: 10vw;
   height: auto;
   padding-left: 30px;
   padding-right: 50px;
