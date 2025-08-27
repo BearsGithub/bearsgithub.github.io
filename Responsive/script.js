@@ -1,24 +1,6 @@
 const events = [
   {
     "name": "vs",
-    "date": "Aug 9, 2025 12:00:00",
-    "team1Logo": "../assets/logos/BEARS.png",
-    "team2Logo": "../assets/logos/DOLPHINS.png"
-  },
-  {
-    "name": "vs",
-    "date": "Aug 17, 2025 19:10:00",
-    "team1Logo": "../assets/logos/BEARS.png",
-    "team2Logo": "../assets/logos/BILLS.png"
-  },
-  {
-    "name": "@",
-    "date": "Aug 22, 2025 19:20:00",
-    "team1Logo": "../assets/logos/BEARS.png",
-    "team2Logo": "../assets/logos/CHIEFS.png"
-  },
-  {
-    "name": "vs",
     "date": "Sep 8, 2025 19:15:00",
     "team1Logo": "../assets/logos/BEARS.png",
     "team2Logo": "../assets/logos/VIKINGS.png"
