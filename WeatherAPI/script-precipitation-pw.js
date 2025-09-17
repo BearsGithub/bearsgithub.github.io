@@ -13,16 +13,12 @@ async function fetchTempAndPrecip() {
         const precipitation = Number(dailydata.data[0].precipitation.value.toFixed(2)) ?? 0;
         const conditionCode = dailydata.data[0].weatherCode.value;
 
-        // Getting temperature
-        const temperature = Number(dailydata.data[0].feelsLike.value.toFixed(0)) ?? 0;
-        document.getElementById('temperature').textContent = `${temperature}°F`;
-        document.getElementById('temperature-icon').src = `https://widget.perryweather.com/icons/weather/dark/${conditionCode}.svg`;
-
         const hourlyresponse = await fetch(hourlyurl);
         if (!hourlyresponse.ok) {
           throw new Error(`HTTP error! status: ${hourlyresponse.status}`);
         }
         const hourlydata = await hourlyresponse.json();
+
         // Getting the precipitation chance for the next hour's forecast
         const precipitationChance = hourlydata.data[1].precipitationChance.value ?? 0;
 

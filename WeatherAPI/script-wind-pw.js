@@ -39,7 +39,8 @@ const windDirectionLookup = {
 
 async function fetchWeather() {
   const url = 'https://dev-perryweatherapi-ebcvgnagbvg7dubh.northcentralus-01.azurewebsites.net/weather';
-  
+  const hourlyurl = 'https://dev-perryweatherapi-ebcvgnagbvg7dubh.northcentralus-01.azurewebsites.net/hourlyforecast';
+
   try {
     console.log('Fetching weather data from:', url);
     const response = await fetch(url);
@@ -47,16 +48,28 @@ async function fetchWeather() {
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    
     const data = await response.json();
 
     const windDirection = data.data.windDirection;
     const windBlowingDirection = windDirectionLookup[windDirection];
     const windDirectionClass = windDirectionMap[windDirection];
 
-    document.getElementById('current-wind').textContent = Number(data.data.windSpeed.value.toFixed(2));
+    const hourlyresponse = await fetch(hourlyurl);
+    if (!hourlyresponse.ok) {
+      throw new Error(`HTTP error! status: ${hourlyresponse.status}`);
+    }
+    const hourlydata = await hourlyresponse.json();
+
+    // Getting temperature
+    const temperature = Number(data.data.feelLike.value.toFixed(0)) ?? 0;
+    const conditionCodeHour = hourlydata.data[0].weatherCode.value;
+
+    document.getElementById('temperature').textContent = `${temperature}°F`;
+    document.getElementById('temperature-icon').src = `https://widget.perryweather.com/icons/weather/dark/${conditionCodeHour}.svg`;
+
+    document.getElementById('current-wind').textContent = Number(data.data.windSpeed.value.toFixed(1));
     document.getElementById('current-wind-direction').textContent = windBlowingDirection;
-    document.getElementById('max-wind').textContent = Number(data.data.windGust.value.toFixed(2));
+    document.getElementById('max-wind').textContent = Number(data.data.windGust.value.toFixed(1));
     document.getElementById('weather-icon-wind').className = `wi wi-wind windicon ${windDirectionClass}`;
   } catch (error) {
     console.error('Error fetching weather data:', error);

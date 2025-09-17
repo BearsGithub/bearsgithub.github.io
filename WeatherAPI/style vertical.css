@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "TerminaHeavy";
+    src: url("../font/Termina-Black.otf");
+}
+body {
+    font-family: 'TerminaHeavy', sans-serif;
+    color: white;
+    background-color: #0b162a;
+}
+.size1080 p{
+    font-size: 18px;
+    padding-right: 40px;
+}
+
+.size4K {
+    font-size: 30px;
+}
+
+.windicon {
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.wind-container {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+}
+
+.windDirection {
+    margin-right: 10px; /* Add some space between the divs */
+}
+
+#weather-temperature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust as needed */
+    font-size: 70px;
+}
+
+#weather-temperature img {
+    width: 50px; /* Adjust size of icon as needed */
+    height: auto;
+}
+
+#weather-temperature span {
+    margin-left: 10px; /* Space between icon and temperature text */
+}
