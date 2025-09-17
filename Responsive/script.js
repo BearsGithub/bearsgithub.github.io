@@ -93,14 +93,26 @@ const events = [
 
 let currentEventIndex = 0;
 
+function initializeCountdown() {
+    const eventsDateTimes = events.map(event => new Date(event.date).getTime());
+    currentEventIndex = findClosestFutureEventIndex(eventsDateTimes);
+}
+
+function findClosestFutureEventIndex(dates) {
+    const now = new Date().getTime();
+    for (let i = 0; i < dates.length; i++) {
+        if (dates[i] > now) return i;
+    }
+    return dates.length; // Return the length if no future events
+}
+
 function countdown() {
-  const countDownDate = new Date(events[currentEventIndex].date).getTime();
-  document.getElementById("event-name").innerText =
-    events[currentEventIndex].name;
-  document.getElementById("team1-logo").src =
-    events[currentEventIndex].team1Logo;
-  document.getElementById("team2-logo").src =
-    events[currentEventIndex].team2Logo;
+  const event = events[currentEventIndex];
+  const countDownDate = new Date(event.date).getTime();
+
+  document.getElementById("event-name").innerText = event.name;
+  document.getElementById("team1-logo").src = event.team1Logo;
+  document.getElementById("team2-logo").src = event.team2Logo;
 
   const x = setInterval(function () {
     const now = new Date().getTime();
@@ -134,4 +146,5 @@ function countdown() {
   }, 1000);
 }
 
+initializeCountdown();
 countdown();
