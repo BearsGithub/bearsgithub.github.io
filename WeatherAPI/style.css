@@ -29,4 +29,19 @@ body {
 .windDirection {
     margin-right: 10px; /* Add some space between the divs */
 }
-    
+#weather-temperature {
+    display: flex;
+    align-items: center;
+    height: 36px;
+}
+
+#temperature-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 8px;
+}
+
+#temperature {
+    font-size: 36px;
+    padding-right: 30px;
+}

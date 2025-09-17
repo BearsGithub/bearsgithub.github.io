@@ -9,18 +9,30 @@
 </head>
 <body>
     <div class="container">
+        <!-- Temperature and Icon -->
+        <div class="size1080" id="weather-temperature">
+            <img src="" id="temperature-icon" class="wi" alt="temperature icon"></img>
+            <span id="temperature">--°F</span>
+        </div>
+
+        <!-- Existing Wind Direction Icon -->
         <div class="windDirection">
             <i id="weather-icon-wind" class="wi wi-wind windicon"></i>
         </div>
+
+        <!-- Existing Weather Wind Information -->
         <div class="size1080" id="weather-wind">
             <p>Wind: <span id="current-wind"></span> mph <span id="current-wind-direction"></span></p>
             <p>Max: <span id="max-wind"></span> mph</p>
         </div>
+
+        <!-- Existing Weather Precipitation Information -->
         <div class="size1080" id="weather-precipitation">
             <p>Precip: <span id="precipitation">0</span> in <img src="https://widget.perryweather.com/icons/weather/dark/9002.svg" id="weather-icon" class="wi" alt="weather icon"></img></p>
             <p>Precip Chance: <span id="precipitation-chance">0</span>%</p>
         </div>
     </div>
+
     <script src="script-wind-pw.js"></script>
     <script src="script-precipitation-pw.js"></script>
 </body>
