@@ -3,7 +3,7 @@
         { 
             "route": "/WeatherAPI/*.html",
             "headers": {
-                "Cache-Control": "no-cache, no-store, must-revalidate"
+                "cache-control": "must-revalidate, max-age=15770000"
             }
         }
     ]
