@@ -1,7 +1,7 @@
 {
     "routes": [
         { 
-            "route": "/WeatherAPI/*.html",
+            "route": "/WeatherAPI/weather.html",
             "headers": {
                 "cache-control": "must-revalidate, max-age=15770000"
             }
