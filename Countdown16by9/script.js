@@ -84,12 +84,12 @@ function countdown() {
     const now = new Date().getTime();
     const distance = countDownDate - now;
 
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor(
+    const days = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0');
+    const hours = String(Math.floor(
       (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-    );
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    )).padStart(2, '0');
+    const minutes = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+    const seconds = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, '0');
 
     document.getElementById("days").innerText = days;
     document.getElementById("hours").innerText = hours;
