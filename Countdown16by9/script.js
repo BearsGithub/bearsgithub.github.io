@@ -99,10 +99,10 @@ function countdown() {
     // Update labels to singular when value is exactly 1; otherwise plural
     const labels = document.querySelectorAll("#countdown .countdown-text");
     if (labels.length === 4) {
-      labels[0].innerText = days === 1 ? "Day" : "Days";
-      labels[1].innerText = hours === 1 ? "Hour" : "Hours";
-      labels[2].innerText = minutes === 1 ? "Minute" : "Minutes";
-      labels[3].innerText = seconds === 1 ? "Second" : "Seconds";
+      labels[0].innerText = days === 1 ? "DAY" : "DAYS";
+      labels[1].innerText = hours === 1 ? "HOUR" : "HOURS";
+      labels[2].innerText = minutes === 1 ? "MINUTE" : "MINUTES";
+      labels[3].innerText = seconds === 1 ? "SECOND" : "SECONDS";
     }
 
     if (distance < 0) {
