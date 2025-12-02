@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bears Game Day Countdown</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="countdown-container">
+        <div id="countdown">
+            <!-- Row 1: values + colons -->
+            <span class="countdown-value" id="days"></span>
+            <span class="colon" aria-hidden="true">:</span>
+            <span class="countdown-value" id="hours"></span>
+            <span class="colon" aria-hidden="true">:</span>
+            <span class="countdown-value" id="minutes"></span>
+            <span class="colon" aria-hidden="true">:</span>
+            <span class="countdown-value" id="seconds"></span>
+
+            <!-- Row 2: labels (empty cells below colons) -->
+            <span class="countdown-text">DAYS</span>
+            <span aria-hidden="true"></span>
+            <span class="countdown-text">HOURS</span>
+            <span aria-hidden="true"></span>
+            <span class="countdown-text">MINUTES</span>
+            <span aria-hidden="true"></span>
+            <span class="countdown-text">SECONDS</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
