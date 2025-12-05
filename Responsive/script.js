@@ -61,7 +61,7 @@ const events = [
   },
   {
     "name": "@",
-    "date": "Dec 7, 2025 12:00:00",
+    "date": "Dec 7, 2025 15:25:00",
     "team1Logo": "../assets/logos/BEARS.png",
     "team2Logo": "../assets/logos/PACKERS.png"
   },
@@ -73,7 +73,7 @@ const events = [
   },
   {
     "name": "vs",
-    "date": "Dec 20, 2025 TBD",
+    "date": "Dec 20, 2025 19:20:00",
     "team1Logo": "../assets/logos/BEARS.png",
     "team2Logo": "../assets/logos/PACKERS.png"
   },
