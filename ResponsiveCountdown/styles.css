@@ -13,7 +13,7 @@ body {
     height: 100vh;
     margin: 0;
     display: flex;
-    background-color: #071327; /* Ensure the body is transparent */
+    background-color: transparent; /* Ensure the body is transparent */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
