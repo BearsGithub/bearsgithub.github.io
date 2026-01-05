@@ -143,7 +143,7 @@ function countdown() {
         countdown();
       } else {
         document.getElementById("countdown").innerHTML =
-          "All events have passed!";
+          "All events have passed";
         document.getElementById("event-name").innerText = "";
         document.getElementById("team1-logo").removeAttribute("src");
         document.getElementById("team2-logo").removeAttribute("src");

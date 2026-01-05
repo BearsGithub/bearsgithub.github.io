@@ -118,7 +118,7 @@ function countdown() {
         countdown();
       } else {
         document.getElementById("countdown").innerHTML =
-          "All events have passed!";
+          "All events have passed";
       }
     }
   }, 1000);
