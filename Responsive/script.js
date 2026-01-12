@@ -94,6 +94,12 @@ const events = [
     "date": "Jan 10, 2026 19:00:00",
     "team1Logo": "../assets/logos/BEARS.png",
     "team2Logo": "../assets/logos/PACKERS.png"
+  },
+  {
+    "name": "vs",
+    "date": "Jan 18, 2026 17:30:00",
+    "team1Logo": "../assets/logos/BEARS.png",
+    "team2Logo": "../assets/logos/RAMS.png"
   }
 ];
 
