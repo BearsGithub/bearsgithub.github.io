@@ -1,75 +1,27 @@
 const events = [
   {
-    "name": "@",
-    "date": "Nov 2, 2025 12:00:00",
+    "name": "vs",
+    "date": "Jan 18, 2026 17:30:00",
     "team1Logo": "../assets/logos/BEARS.png",
-    "team2Logo": "../assets/logos/BENGALS.png"
+    "team2Logo": "../assets/logos/RAMS.png"
   },
   {
     "name": "vs",
-    "date": "Nov 9, 2025 12:00:00",
-    "team1Logo": "../assets/logos/BEARS.png",
-    "team2Logo": "../assets/logos/GIANTS.png"
-  },
-  {
-    "name": "@",
-    "date": "Nov 16, 2025 12:00:00",
-    "team1Logo": "../assets/logos/BEARS.png",
-    "team2Logo": "../assets/logos/VIKINGS.png"
-  },
-  {
-    "name": "vs",
-    "date": "Nov 23, 2025 12:00:00",
-    "team1Logo": "../assets/logos/BEARS.png",
-    "team2Logo": "../assets/logos/STEELERS.png"
-  },
-  {
-    "name": "@",
-    "date": "Nov 28, 2025 15:00:00",
-    "team1Logo": "../assets/logos/BEARS.png",
-    "team2Logo": "../assets/logos/EAGLES.png"
-  },
-    {
-    "name": "@",
-    "date": "Dec 7, 2025 15:25:00",
-    "team1Logo": "../assets/logos/BEARS.png",
-    "team2Logo": "../assets/logos/PACKERS.png"
-  },
-  {
-    "name": "vs",
-    "date": "Dec 14, 2025 12:00:00",
-    "team1Logo": "../assets/logos/BEARS.png",
-    "team2Logo": "../assets/logos/BROWNS.png"
-  },
-  {
-    "name": "vs",
-    "date": "Dec 20, 2025 19:20:00",
-    "team1Logo": "../assets/logos/BEARS.png",
-    "team2Logo": "../assets/logos/PACKERS.png"
-  },
-  {
-    "name": "@",
-    "date": "Dec 28, 2025 19:20:00",
+    "date": "Jan 25, 2026 19:00:00",
     "team1Logo": "../assets/logos/BEARS.png",
     "team2Logo": "../assets/logos/49ERS.png"
   },
   {
     "name": "vs",
-    "date": "Jan 4, 2026 15:25:00",
+    "date": "Feb 8, 2026 17:30:00",
     "team1Logo": "../assets/logos/BEARS.png",
-    "team2Logo": "../assets/logos/LIONS.png"
+    "team2Logo": "../assets/logos/PATRIOTS.png"
   },
-  {
-    "name": "vs",
-    "date": "Jan 10, 2026 19:00:00",
+    {
+    "name": "@",
+    "date": "Apr 23, 2026 17:00:00",
     "team1Logo": "../assets/logos/BEARS.png",
-    "team2Logo": "../assets/logos/PACKERS.png"
-  },
-  {
-    "name": "vs",
-    "date": "Jan 18, 2026 17:30:00",
-    "team1Logo": "../assets/logos/BEARS.png",
-    "team2Logo": "../assets/logos/RAMS.png"
+    "team2Logo": "../assets/nfl_draft_logo.png"
   }
 ];
 
