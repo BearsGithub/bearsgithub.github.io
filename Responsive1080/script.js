@@ -6,7 +6,7 @@ const events = [
     "team2Logo": "../assets/logos/RAMS.png"
   },
   {
-    "name": "vs",
+    "name": "@",
     "date": "Jan 25, 2026 19:00:00",
     "team1Logo": "../assets/logos/BEARS.png",
     "team2Logo": "../assets/logos/SEAHAWKS.png"
