@@ -18,18 +18,18 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #0b162a;
+    background-color: transparent;
     flex-direction: column;
 }
 
 .countdown-container {
     display: none;
-    text-align: center;
+    /* text-align: center; */
     background: transparent;
     border-radius: 10px;
     box-shadow: none;
-    width: 90%;
-    max-width: 600px;
+    /* width: 90%; */
+    /* max-width: 600px; */
 }
 
 #event-name-container {
