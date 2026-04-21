@@ -1,7 +1,7 @@
 const events = [
     {
     "name": "@",
-    "date": "Apr 23, 2026 17:00:00",
+    "date": "Apr 23, 2026 19:00:00",
     "team1Logo": "../assets/logos/BEARS.png",
     "team2Logo": "../assets/nfl_draft_logo.png"
   }
