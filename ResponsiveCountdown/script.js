@@ -1,9 +1,123 @@
 const events = [
-    {
-    "name": "@",
-    "date": "Apr 23, 2026 19:00:00",
+  {
+    "name": "vs",
+    "date": "Aug 15, 2026 12:00:00",
     "team1Logo": "../assets/logos/BEARS.png",
-    "team2Logo": "../assets/nfl_draft_logo.png"
+    "team2Logo": "../assets/logos/BROWNS.png"
+  },
+  {
+    "name": "@",
+    "date": "Aug 22, 2026 18:00:00",
+    "team1Logo": "../assets/logos/BEARS.png",
+    "team2Logo": "../assets/logos/BENGALS.png"
+  },
+  {
+    "name": "@",
+    "date": "Aug 29, 2026 17:00:00",
+    "team1Logo": "../assets/logos/BEARS.png",
+    "team2Logo": "../assets/logos/TITANS.png"
+  },
+  {
+    "name": "@",
+    "date": "Sep 13, 2026 12:00:00",
+    "team1Logo": "../assets/logos/BEARS.png",
+    "team2Logo": "../assets/logos/PANTHERS.png"
+  },
+  {
+    "name": "vs",
+    "date": "Sep 20, 2026 12:00:00",
+    "team1Logo": "../assets/logos/BEARS.png",
+    "team2Logo": "../assets/logos/VIKINGS.png"
+  },
+  {
+    "name": "vs",
+    "date": "Sep 28, 2026 19:15:00",
+    "team1Logo": "../assets/logos/BEARS.png",
+    "team2Logo": "../assets/logos/EAGLES.png"
+  },
+  {
+    "name": "vs",
+    "date": "Oct 4, 2026 12:00:00",
+    "team1Logo": "../assets/logos/BEARS.png",
+    "team2Logo": "../assets/logos/JETS.png"
+  },
+  {
+    "name": "@",
+    "date": "Oct 11, 2026 15:25:00",
+    "team1Logo": "../assets/logos/BEARS.png",
+    "team2Logo": "../assets/logos/PACKERS.png"
+  },
+  {
+    "name": "@",
+    "date": "Oct 18, 2026 12:00:00",
+    "team1Logo": "../assets/logos/BEARS.png",
+    "team2Logo": "../assets/logos/FALCONS.png"
+  },
+  {
+    "name": "vs",
+    "date": "Oct 22, 2026 19:15:00",
+    "team1Logo": "../assets/logos/BEARS.png",
+    "team2Logo": "../assets/logos/PATRIOTS.png"
+  },
+  {
+    "name": "@",
+    "date": "Nov 2, 2026 19:15:00",
+    "team1Logo": "../assets/logos/BEARS.png",
+    "team2Logo": "../assets/logos/SEAHAWKS.png"
+  },
+  {
+    "name": "vs",
+    "date": "Nov 8, 2026 19:20:00",
+    "team1Logo": "../assets/logos/BEARS.png",
+    "team2Logo": "../assets/logos/BUCCANEERS.png"
+  },
+  {
+    "name": "vs",
+    "date": "Nov 22, 2026 12:00:00",
+    "team1Logo": "../assets/logos/BEARS.png",
+    "team2Logo": "../assets/logos/SAINTS.png"
+  },
+  {
+    "name": "@",
+    "date": "Nov 26, 2026 12:00:00",
+    "team1Logo": "../assets/logos/BEARS.png",
+    "team2Logo": "../assets/logos/LIONS.png"
+  },
+  {
+    "name": "vs",
+    "date": "Dec 6, 2026 12:00:00",
+    "team1Logo": "../assets/logos/BEARS.png",
+    "team2Logo": "../assets/logos/JAGUARS.png"
+  },
+  {
+    "name": "@",
+    "date": "Dec 13, 2026 12:00:00",
+    "team1Logo": "../assets/logos/BEARS.png",
+    "team2Logo": "../assets/logos/DOLPHINS.png"
+  },
+  {
+    "name": "@",
+    "date": "Dec 19, 2026 19:20:00",
+    "team1Logo": "../assets/logos/BEARS.png",
+    "team2Logo": "../assets/logos/BILLS.png"
+  },
+  {
+    "name": "vs",
+    "date": "Dec 25, 2026 12:00:00",
+    "team1Logo": "../assets/logos/BEARS.png",
+    "team2Logo": "../assets/logos/PACKERS.png"
+  },
+  {
+    "name": "vs",
+    "date": "Jan 3, 2027 15:25:00",
+    "team1Logo": "../assets/logos/BEARS.png",
+    "team2Logo": "../assets/logos/LIONS.png"
+  },
+  {
+    "name": "@",
+    "date": "Jan 10, 2027 12:00:00",
+    "team1Logo": "../assets/logos/BEARS.png",
+    "team2Logo": "../assets/logos/VIKINGS.png"
   }
 ];
 
