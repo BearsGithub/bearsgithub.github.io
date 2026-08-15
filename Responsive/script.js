@@ -179,15 +179,13 @@ function countdown() {
 initializeCountdown();
 countdown();
 
-// Stretch the fixed-size stage to fill nearly the whole box this page is
-// embedded in (e.g. an iframe on a signage template). This scales width and
-// height independently rather than preserving aspect ratio, so the widget
-// always fills the box edge-to-edge instead of leaving empty margins when
-// the box's aspect ratio doesn't match the design's.
+// Scale the fixed-size stage to fill the box this page is embedded in
+// (e.g. an iframe on a signage template), edge-to-edge, without distorting
+// its shape. Uses a uniform "cover" scale (the larger of the two ratios) so
+// aspect ratio is preserved; any overflow is cropped by `overflow: hidden`
+// on <body> rather than stretching the content.
 // offsetWidth/offsetHeight are unaffected by the transform below, so they
 // always reflect the stage's true (untransformed) content size.
-const FILL_FRACTION = 0.98;
-
 function fitStage() {
   const stage = document.getElementById("stage");
   if (!stage) return;
@@ -196,10 +194,12 @@ function fitStage() {
   const naturalHeight = stage.offsetHeight;
   if (!naturalWidth || !naturalHeight) return;
 
-  const scaleX = (document.body.clientWidth * FILL_FRACTION) / naturalWidth;
-  const scaleY = (document.body.clientHeight * FILL_FRACTION) / naturalHeight;
+  const scale = Math.max(
+    document.body.clientWidth / naturalWidth,
+    document.body.clientHeight / naturalHeight,
+  );
 
-  stage.style.transform = `translate(-50%, -50%) scale(${scaleX}, ${scaleY})`;
+  stage.style.transform = `translate(-50%, -50%) scale(${scale})`;
 }
 
 const stageEl = document.getElementById("stage");
