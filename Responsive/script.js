@@ -179,11 +179,15 @@ function countdown() {
 initializeCountdown();
 countdown();
 
-// Scale the fixed-size stage to fit whatever box this page is embedded in
-// (e.g. an iframe on a signage template), preserving aspect ratio and
-// avoiding any text wrapping/clipping.
+// Stretch the fixed-size stage to fill nearly the whole box this page is
+// embedded in (e.g. an iframe on a signage template). This scales width and
+// height independently rather than preserving aspect ratio, so the widget
+// always fills the box edge-to-edge instead of leaving empty margins when
+// the box's aspect ratio doesn't match the design's.
 // offsetWidth/offsetHeight are unaffected by the transform below, so they
 // always reflect the stage's true (untransformed) content size.
+const FILL_FRACTION = 0.98;
+
 function fitStage() {
   const stage = document.getElementById("stage");
   if (!stage) return;
@@ -192,12 +196,10 @@ function fitStage() {
   const naturalHeight = stage.offsetHeight;
   if (!naturalWidth || !naturalHeight) return;
 
-  const scale = Math.min(
-    document.body.clientWidth / naturalWidth,
-    document.body.clientHeight / naturalHeight,
-  );
+  const scaleX = (document.body.clientWidth * FILL_FRACTION) / naturalWidth;
+  const scaleY = (document.body.clientHeight * FILL_FRACTION) / naturalHeight;
 
-  stage.style.transform = `translate(-50%, -50%) scale(${scale})`;
+  stage.style.transform = `translate(-50%, -50%) scale(${scaleX}, ${scaleY})`;
 }
 
 const stageEl = document.getElementById("stage");
