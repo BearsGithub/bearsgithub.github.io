@@ -178,3 +178,37 @@ function countdown() {
 
 initializeCountdown();
 countdown();
+
+// Scale the fixed-size stage to fit whatever box this page is embedded in
+// (e.g. an iframe on a signage template), preserving aspect ratio and
+// avoiding any text wrapping/clipping.
+// offsetWidth/offsetHeight are unaffected by the transform below, so they
+// always reflect the stage's true (untransformed) content size.
+function fitStage() {
+  const stage = document.getElementById("stage");
+  if (!stage) return;
+
+  const naturalWidth = stage.offsetWidth;
+  const naturalHeight = stage.offsetHeight;
+  if (!naturalWidth || !naturalHeight) return;
+
+  const scale = Math.min(
+    document.body.clientWidth / naturalWidth,
+    document.body.clientHeight / naturalHeight,
+  );
+
+  stage.style.transform = `translate(-50%, -50%) scale(${scale})`;
+}
+
+const stageEl = document.getElementById("stage");
+if (stageEl && window.ResizeObserver) {
+  // Recompute whenever the stage's own content changes size (e.g. team
+  // logo images or web fonts finishing loading) or the outer box resizes.
+  const resizeObserver = new ResizeObserver(fitStage);
+  resizeObserver.observe(stageEl);
+  resizeObserver.observe(document.body);
+} else {
+  window.addEventListener("resize", fitStage);
+  window.addEventListener("load", fitStage);
+}
+fitStage();
