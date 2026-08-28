@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Away Game Weather</title>
+    <link rel="stylesheet" href="../WeatherAPI/weather-icons-wind.min.css">
+    <link rel="stylesheet" href="../WeatherAPI/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Game Location Label -->
+        <div class="size1080" id="game-location">
+            <p id="location-label">Loading...</p>
+        </div>
+
+        <!-- Temperature and Icon -->
+        <div class="size1080" id="weather-temperature">
+            <img src="" id="temperature-icon" class="wi" alt="temperature icon">
+            <span id="temperature">--°F</span>
+        </div>
+
+        <!-- Wind Direction Icon -->
+        <div class="windDirection">
+            <i id="weather-icon-wind" class="wi wi-wind windicon"></i>
+        </div>
+
+        <!-- Weather Wind Information -->
+        <div class="size1080" id="weather-wind">
+            <p>Wind: <span id="current-wind"></span> mph <span id="current-wind-direction"></span></p>
+            <p>Max: <span id="max-wind"></span> mph</p>
+        </div>
+
+        <!-- Weather Precipitation Information -->
+        <div class="size1080" id="weather-precipitation">
+            <p>Precip: <span id="precipitation">0</span> in <img src="" id="weather-icon" class="wi" alt="weather icon"></p>
+            <p>Precip Chance: <span id="precipitation-chance">0</span>%</p>
+        </div>
+    </div>
+
+    <script src="away-games.js"></script>
+    <script src="script-wind-away.js"></script>
+    <script src="script-precipitation-away.js"></script>
+</body>
+</html>
