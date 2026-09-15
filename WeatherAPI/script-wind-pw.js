@@ -37,6 +37,9 @@ const windDirectionLookup = {
 };
 
 
+const MAX_RETRIES = 5;
+const RETRY_DELAY_MS = 30000;
+
 async function fetchWeather() {
   const url = 'https://dev-perryweatherapi-ebcvgnagbvg7dubh.northcentralus-01.azurewebsites.net/weather';
   const hourlyurl = 'https://dev-perryweatherapi-ebcvgnagbvg7dubh.northcentralus-01.azurewebsites.net/hourlyforecast';
@@ -60,20 +63,41 @@ async function fetchWeather() {
     }
     const hourlydata = await hourlyresponse.json();
 
-    // Getting temperature
     const temperature = Number(data.data.feelLike.value.toFixed(0)) ?? 0;
+    const windSpeed = Number(data.data.windSpeed.value.toFixed(1));
+    const windGust = Number(data.data.windGust.value.toFixed(1));
     const conditionCodeHour = hourlydata.data[0].weatherCode.value;
+
+    if (isNaN(temperature) || isNaN(windSpeed)) {
+      throw new Error('Invalid data: temperature or wind speed is NaN');
+    }
 
     document.getElementById('temperature').textContent = `${temperature}°F`;
     document.getElementById('temperature-icon').src = `https://widget.perryweather.com/icons/weather/dark/${conditionCodeHour}.svg`;
 
-    document.getElementById('current-wind').textContent = Number(data.data.windSpeed.value.toFixed(1));
+    document.getElementById('current-wind').textContent = windSpeed;
     document.getElementById('current-wind-direction').textContent = windBlowingDirection;
-    document.getElementById('max-wind').textContent = Number(data.data.windGust.value.toFixed(1));
+    document.getElementById('max-wind').textContent = windGust;
     document.getElementById('weather-icon-wind').className = `wi wi-wind windicon ${windDirectionClass}`;
+
+    return true;
   } catch (error) {
     console.error('Error fetching weather data:', error);
+    return false;
   }
 }
 
-fetchWeather();
+async function fetchWithRetry() {
+  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+    console.log(`Weather fetch attempt ${attempt} of ${MAX_RETRIES}`);
+    const success = await fetchWeather();
+    if (success) return;
+    if (attempt < MAX_RETRIES) {
+      console.log(`Retrying in ${RETRY_DELAY_MS / 1000} seconds...`);
+      await new Promise(resolve => setTimeout(resolve, RETRY_DELAY_MS));
+    }
+  }
+  console.error('All weather fetch attempts failed.');
+}
+
+fetchWithRetry();
