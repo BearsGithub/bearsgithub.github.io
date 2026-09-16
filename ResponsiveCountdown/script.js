@@ -180,3 +180,42 @@ function countdown() {
 
 initializeCountdown();
 countdown();
+
+// Scale the fixed-size design canvas to fit the box this page is embedded in
+// (e.g. an iframe on a signage template) without ever overflowing it. Uses a
+// uniform "contain" scale (the smaller of the two ratios) so the digits keep
+// their shape and stay fully on screen on any display orientation, including
+// portrait 1080x1920.
+// offsetWidth/offsetHeight are unaffected by the transform below, so they
+// always report the stage's true untransformed size.
+const FIT_FRACTION = 0.94; // leave a small breathing margin at the edges
+
+function fitStage() {
+  const stage = document.getElementById("stage");
+  if (!stage) return;
+
+  const naturalWidth = stage.offsetWidth;
+  const naturalHeight = stage.offsetHeight;
+  if (!naturalWidth || !naturalHeight) return;
+
+  const scale =
+    Math.min(
+      document.body.clientWidth / naturalWidth,
+      document.body.clientHeight / naturalHeight,
+    ) * FIT_FRACTION;
+
+  stage.style.transform = `translate(-50%, -50%) scale(${scale})`;
+}
+
+const stageEl = document.getElementById("stage");
+if (stageEl && window.ResizeObserver) {
+  // Recompute when the stage's own content changes size (web fonts finishing
+  // loading, digit counts changing) or when the outer box resizes.
+  const resizeObserver = new ResizeObserver(fitStage);
+  resizeObserver.observe(stageEl);
+  resizeObserver.observe(document.body);
+} else {
+  window.addEventListener("resize", fitStage);
+  window.addEventListener("load", fitStage);
+}
+fitStage();
