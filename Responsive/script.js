@@ -43,7 +43,7 @@ const events = [
   },
   {
     "name": "@",
-    "date": "Oct 11, 2026 15:25:00",
+    "date": "Oct 11, 2026 12:00:00",
     "team1Logo": "../assets/logos/BEARS.png",
     "team2Logo": "../assets/logos/PACKERS.png"
   },
